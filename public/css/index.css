@@ -25,7 +25,8 @@ a, a:hover {
 
 ul {
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: 0; }
   ul li {
     display: inline-block; }
 
@@ -38,10 +39,47 @@ footer {
   background-color: #fcb606;
   overflow: hidden; }
   footer .container {
-    margin-top: 60px; }
+    margin-top: 60px;
+    text-align: center; }
 
 .content.inverse {
   background-color: #262636; }
+
+.social-menu li {
+  margin-right: 20px; }
+  .social-menu li:last-child {
+    margin-right: 0; }
+
+.tapas-menu {
+  font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-size: 16px; }
+  .tapas-menu a {
+    color: #262636; }
+    .tapas-menu a:hover {
+      color: #ffffff; }
+  .tapas-menu li {
+    margin-right: 20px; }
+    .tapas-menu li:first-child {
+      margin-left: 65px; }
+    .tapas-menu li:last-child {
+      margin-right: 0; }
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #464656;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  margin-right: 16px;
+  cursor: pointer; }
+  .dot:last-child {
+    margin-right: 0; }
+  .dot.active {
+    background-color: #ffffff; }
 
 @media (min-width: 20em) {
   header {
@@ -137,31 +175,6 @@ footer {
     .guide-wrap ul li:last-child {
       display: inline-block;
       margin-right: 0; } }
-.tapas-menu {
-  font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: normal !important;
-  font-style: normal !important;
-  font-size: 16px; }
-  .tapas-menu a {
-    color: #262636; }
-    .tapas-menu a:hover {
-      color: #ffffff; }
-
-.dot {
-  width: 12px;
-  height: 12px;
-  background-color: #464656;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px;
-  margin-right: 16px;
-  cursor: pointer; }
-  .dot:last-child {
-    margin-right: 0; }
-  .dot.active {
-    background-color: #ffffff; }
-
 .container {
   position: relative; }
   .container .logos img {
@@ -212,14 +225,11 @@ footer {
   bottom: 0;
   left: 0; }
 .info-wrap .info {
-  position: relative;
-  padding-top: 60px;
-  height: inherit; }
+  padding: 60px 0;
+  height: inherit;
+  text-align: center; }
   .info-wrap .info ul {
-    position: absolute;
-    bottom: 60px;
-    font-size: 0;
-    margin: 0; }
+    margin: 0 auto; }
   .info-wrap .info p {
     color: #ffffff;
     font-size: 18px;
@@ -235,8 +245,7 @@ footer {
   text-align: center;
   line-height: 1; }
 .guide-wrap ul {
-  margin: 0 0 60px 0;
-  font-size: 0; }
+  margin: 0 0 60px 0; }
   .guide-wrap ul li {
     width: 200px; }
     .guide-wrap ul li p {

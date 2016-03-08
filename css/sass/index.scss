@@ -73,15 +73,12 @@
   }
 
   .info {
-    position: relative;
-    padding-top: 60px;
+    padding: 60px 0;
     height: inherit;
+    text-align: center;
 
     ul {
-      position: absolute;
-      bottom: 60px;
-      font-size: 0;
-      margin: 0;
+      margin: 0 auto;
     }
 
     p {
@@ -108,7 +105,6 @@
 
   ul {
     margin: 0 0 60px 0;
-    font-size: 0;
 
     li {
       width: 200px;

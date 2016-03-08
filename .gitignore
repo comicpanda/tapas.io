@@ -1,0 +1,43 @@
+# Eclipse Project Files #
+##########################
+.settings
+.classpath
+.project
+/.externalToolBuilders
+
+# Maven Output #
+#################
+target
+
+# Intellij IDEA Project Files#
+##############################
+*.iml
+.idea
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# ETC
+web/WEB-INF/classes/
+web/WEB-INF/lib/
+rebel.xml
+src/main/resources/prod/*.*
+web/resources/**/panda.*min.*
+web/resources/js/embedding.min.js
+web/resources/images/sprites/sprite*.png
+
+src/main/resources/dev/*
+src/main/resources/prod/*
+__bk.*
+
+*.swp
+*.rdb
+
+src/main/resources/base/personal-configs.xml
+node_modules/
+
+*.log
+
+.sass-cache/*

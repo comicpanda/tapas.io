@@ -6,16 +6,27 @@
 }
 
 @mixin f-qsb() {
-  font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $qsb-font-stack;
   @include font;
 }
 
 @mixin f-qsl() {
-  font-family: "QuicksandLight", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $qsl-font-stack;
   @include font;
 }
 
 @mixin f-qsr() {
-  font-family: "QuicksandRegular", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $qsr-font-stack;
   @include font;
+}
+
+@mixin rm-lh() {
+  line-height: 0;
+}
+
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }

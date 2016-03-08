@@ -1,10 +1,36 @@
+// variables.scss
+
+// colour
 $color-f6: #f6f6f6;
 $color-e6: #e6e6e6;
 $color-d6: #d6d6d6;
 $color-a6: #a6a6a6;
 $color-white: #ffffff;
+$color-00: #000000;
 $color-black: #262636;
 $color-d-gray: #464656;
 $color-yellow: #fcb606;
 $color-l-blue: #26b6b6;
 
+// font
+$qsb-font-stack: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif !default;
+$qsr-font-stack: "QuicksandRegular", "Helvetica Neue", Helvetica, sans-serif !default;
+$qsl-font-stack: "QuicksandLight", "Helvetica Neue", Helvetica, sans-serif !default;
+
+@font-face {
+  font-family: 'QuicksandBold';
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url('/public/fonts/Quicksand-Bold.otf') format('opentype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'QuicksandLight';
+  src: local('Quicksand Light'), local('Quicksand-Light'), url('/public/fonts/Quicksand-Light.otf') format('opentype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'QuicksandRegular';
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url('/public/fonts/Quicksand-Regular.otf') format('opentype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}

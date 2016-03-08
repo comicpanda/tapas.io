@@ -1,12 +1,211 @@
-@import "bourbon";
 @import "mixins";
 
 html, body {
   @include f-qsr;
-  line-height: 0;
+  @include rm-lh;
   letter-spacing: 0;
+}
+
+img {
+  @include rm-lh;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul {
+
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+header {
+  background: $color-black url('/public/images/bg-banner.png') no-repeat center;
+  background-size: 100%;
+  opacity: 0.9;
 }
 
 footer {
   background-color: $color-yellow;
+  overflow: hidden;
+
+  .container {
+    margin-top: 60px;
+  }
+}
+
+// Small devices (landscape phones, 34em and up)
+@media (min-width: 20em) {
+  header {
+    height: 528px;
+
+    .slogan {
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    max-width:280px !important;
+    padding: 0;
+
+    .info-wrap {
+      height: 440px;
+
+      img {
+        display: none;
+      }
+    }
+
+    .guide-wrap {
+      p {
+        margin: 60px auto 40px auto;
+      }
+
+      ul {
+        li {
+          display: block;
+          margin: 0 auto 40px auto;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 48em and up)
+@media (min-width: 48em) {
+  header {
+    height: 600px;
+
+    .slogan {
+      font-size: 24px;
+    }
+  }
+  .container{
+    max-width:648px !important;
+    padding: 0;
+
+    .info-wrap {
+      height: 424px;
+
+      img {
+        display: block;
+      }
+    }
+
+    .guide-wrap {
+      p {
+        margin: 60px auto 32px auto;
+      }
+
+      ul {
+        li {
+          display: inline-block;
+          margin: 0 24px 0 0;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 62em and up)
+@media (min-width: 62em) {
+  header {
+    height: 600px;
+
+    .slogan {
+      font-size: 24px;
+    }
+  }
+
+  .container{
+    max-width:920px !important;
+    padding: 0 80px;
+
+    .info-wrap {
+      height: 424px;
+
+      img {
+        display: block;
+      }
+    }
+
+    .guide-wrap {
+      p {
+        margin: 60px auto 32px auto;
+      }
+
+      ul {
+        li {
+          margin: 0 80px 0 0;
+
+          &:last-child {
+            display: inline-block;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 75em and up)
+@media (min-width: 75em) {
+  header {
+    height: 600px;
+
+    .slogan {
+      font-size: 24px;
+    }
+  }
+
+  .container{
+    max-width:920px !important;
+    padding: 0 80px;
+
+    .info-wrap {
+      height: 424px;
+
+      img {
+        display: block;
+      }
+    }
+
+    .guide-wrap {
+      p {
+        margin: 60px auto 32px auto;
+      }
+
+      ul {
+        li {
+          margin: 0 80px 0 0;
+
+          &:last-child {
+            display: inline-block;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tapas-menu {
+  @include f-qsb;
+  font-size: 16px;
+
+  a {
+    color: $color-black;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
 }

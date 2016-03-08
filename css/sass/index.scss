@@ -1,0 +1,94 @@
+@import "tapas";
+
+
+.container {
+  .logos {
+
+    img {
+      display: block;
+      margin: 0 auto;
+
+      &:first-child {
+        padding-top: 80px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .slogan {
+    @include f-qsr;
+    color: $color-white;
+    text-align: center;
+    line-height: 1;
+    margin-top: 32px;
+  }
+
+  .app-store {
+    .app-store-btn-wrap {
+      text-align: center;
+    }
+
+    .app-store-btn {
+      display: inline-block;
+      background-color: $color-00;
+      width: 180px;
+      height: 60px;
+      vertical-align: middle;
+      @include border-radius();
+      text-align: center;
+
+      img {
+        padding: 10px 0;
+      }
+
+      &:last-child {
+        img {
+          padding: 8px 0;
+        }
+      }
+    }
+
+    .app-store-msg {
+      @include f-qsb;
+      color: $color-white;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1;
+      margin-top: 24px;
+    }
+  }
+
+  .info-wrap {
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .guide-wrap {
+    p {
+      color: $color-black;
+      font-size: 36px;
+      text-align: center;
+      line-height: 1;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 0 60px 0;
+      font-size: 0;
+
+      li {
+        width: 200px;
+
+        p {
+          font-size: 18px;
+          margin: 24px auto 0 auto;
+        }
+      }
+    }
+  }
+}

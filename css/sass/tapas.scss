@@ -15,7 +15,7 @@ a, a:hover {
 }
 
 ul {
-
+  padding: 0;
   list-style-type: none;
 
   li {
@@ -38,6 +38,12 @@ footer {
   }
 }
 
+.content {
+  &.inverse {
+    background-color: $color-black;
+  }
+}
+
 // Small devices (landscape phones, 34em and up)
 @media (min-width: 20em) {
   header {
@@ -51,25 +57,29 @@ footer {
   .container {
     max-width:280px !important;
     padding: 0;
+  }
 
-    .info-wrap {
-      height: 440px;
+  .info-wrap {
+    height: 440px;
 
-      img {
-        display: none;
-      }
+    img {
+      display: none;
     }
 
-    .guide-wrap {
-      p {
-        margin: 60px auto 40px auto;
-      }
+    .info {
+      margin-left: 0px;
+    }
+  }
 
-      ul {
-        li {
-          display: block;
-          margin: 0 auto 40px auto;
-        }
+  .guide-wrap {
+    p {
+      margin: 60px auto 40px auto;
+    }
+
+    ul {
+      li {
+        display: block;
+        margin: 0 auto 40px auto;
       }
     }
   }
@@ -87,28 +97,32 @@ footer {
   .container{
     max-width:648px !important;
     padding: 0;
+  }
 
-    .info-wrap {
-      height: 424px;
+  .info-wrap {
+    height: 424px;
 
-      img {
-        display: block;
-      }
+    img {
+      display: block;
     }
 
-    .guide-wrap {
-      p {
-        margin: 60px auto 32px auto;
-      }
+    .info {
+      margin-left: 328px;
+    }
+  }
 
-      ul {
-        li {
-          display: inline-block;
-          margin: 0 24px 0 0;
+  .guide-wrap {
+    p {
+      margin: 60px auto 32px auto;
+    }
 
-          &:last-child {
-            margin-right: 0;
-          }
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 24px 0 0;
+
+        &:last-child {
+          margin-right: 0;
         }
       }
     }
@@ -128,28 +142,32 @@ footer {
   .container{
     max-width:920px !important;
     padding: 0 80px;
+  }
 
-    .info-wrap {
-      height: 424px;
+  .info-wrap {
+    height: 424px;
 
-      img {
-        display: block;
-      }
+    img {
+      display: block;
     }
 
-    .guide-wrap {
-      p {
-        margin: 60px auto 32px auto;
-      }
+    .info {
+      margin-left: 392px;
+    }
+  }
 
-      ul {
-        li {
-          margin: 0 80px 0 0;
+  .guide-wrap {
+    p {
+      margin: 60px auto 32px auto;
+    }
 
-          &:last-child {
-            display: inline-block;
-            margin-right: 0;
-          }
+    ul {
+      li {
+        margin: 0 80px 0 0;
+
+        &:last-child {
+          display: inline-block;
+          margin-right: 0;
         }
       }
     }
@@ -169,28 +187,32 @@ footer {
   .container{
     max-width:920px !important;
     padding: 0 80px;
+  }
 
-    .info-wrap {
-      height: 424px;
+  .info-wrap {
+    height: 424px;
 
-      img {
-        display: block;
-      }
+    img {
+      display: block;
     }
 
-    .guide-wrap {
-      p {
-        margin: 60px auto 32px auto;
-      }
+    .info {
+      margin-left: 392px;
+    }
+  }
 
-      ul {
-        li {
-          margin: 0 80px 0 0;
+  .guide-wrap {
+    p {
+      margin: 60px auto 32px auto;
+    }
 
-          &:last-child {
-            display: inline-block;
-            margin-right: 0;
-          }
+    ul {
+      li {
+        margin: 0 80px 0 0;
+
+        &:last-child {
+          display: inline-block;
+          margin-right: 0;
         }
       }
     }
@@ -207,5 +229,22 @@ footer {
     &:hover {
       color: $color-white;
     }
+  }
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: $color-d-gray;
+  @include border-radius(6px);
+  margin-right: 16px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.active {
+    background-color: $color-white;
   }
 }

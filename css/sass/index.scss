@@ -2,6 +2,8 @@
 
 
 .container {
+  position: relative;
+
   .logos {
 
     img {
@@ -57,37 +59,63 @@
       margin-top: 24px;
     }
   }
+}
 
-  .info-wrap {
-    position: relative;
-
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
+.info-wrap {
+  .container {
+    height: inherit;
   }
 
-  .guide-wrap {
-    p {
-      color: $color-black;
-      font-size: 36px;
-      text-align: center;
-      line-height: 1;
-    }
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .info {
+    position: relative;
+    padding-top: 60px;
+    height: inherit;
 
     ul {
-      padding: 0;
-      margin: 0 0 60px 0;
+      position: absolute;
+      bottom: 60px;
       font-size: 0;
+      margin: 0;
+    }
 
-      li {
-        width: 200px;
+    p {
+      color: $color-white;
+      font-size: 18px;
+      text-align: left;
+      line-height: 1;
 
-        p {
-          font-size: 18px;
-          margin: 24px auto 0 auto;
-        }
+      &:first-child {
+        font-size: 36px;
+        margin: 0 auto 32px auto;
+      }
+    }
+  }
+}
+
+.guide-wrap {
+  p {
+    color: $color-black;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  ul {
+    margin: 0 0 60px 0;
+    font-size: 0;
+
+    li {
+      width: 200px;
+
+      p {
+        font-size: 18px;
+        margin: 24px auto 0 auto;
       }
     }
   }

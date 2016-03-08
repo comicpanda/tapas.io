@@ -1,0 +1,12 @@
+@import "bourbon";
+@import "mixins";
+
+html, body {
+  @include f-qsr;
+  line-height: 0;
+  letter-spacing: 0;
+}
+
+footer {
+  background-color: $color-yellow;
+}

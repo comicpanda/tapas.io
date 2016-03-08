@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin font() {
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+@mixin f-qsb() {
+  font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+  @include font;
+}
+
+@mixin f-qsl() {
+  font-family: "QuicksandLight", "Helvetica Neue", Helvetica, sans-serif;
+  @include font;
+}
+
+@mixin f-qsr() {
+  font-family: "QuicksandRegular", "Helvetica Neue", Helvetica, sans-serif;
+  @include font;
+}

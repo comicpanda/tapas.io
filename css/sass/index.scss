@@ -4,19 +4,6 @@
 .container {
   position: relative;
 
-  .logos {
-
-    img {
-      display: block;
-      margin: 0 auto;
-
-      &:first-child {
-        padding-top: 80px;
-        margin-bottom: 24px;
-      }
-    }
-  }
-
   .slogan {
     @include f-qsr;
     color: $color-white;

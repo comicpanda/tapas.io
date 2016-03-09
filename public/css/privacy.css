@@ -70,16 +70,12 @@ footer {
     display: inline-block; }
     .logos a:first-child {
       margin-right: 12px; }
-  .logos.centered {
-    overflow: auto;
-    float: none;
-    margin-top: 0; }
-    .logos.centered img {
-      display: block;
-      margin: 0 auto; }
-      .logos.centered img:first-child {
-        padding-top: 80px;
-        margin-bottom: 24px; }
+  .logos.centered img {
+    display: block;
+    margin: 0 auto; }
+    .logos.centered img:first-child {
+      padding-top: 80px;
+      margin-bottom: 24px; }
 
 .stores {
   float: right;
@@ -338,82 +334,31 @@ footer {
         margin-right: 3px; }
       .company p:last-child {
         margin-left: 5px; } }
-.container {
-  position: relative; }
-  .container .slogan {
-    font-family: "QuicksandRegular", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: normal !important;
-    font-style: normal !important;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 32px; }
-  .container .app-store {
-    margin-top: 60px; }
-    .container .app-store .app-store-btn-wrap {
-      text-align: center;
-      font-size: 0; }
-    .container .app-store .app-store-btn {
-      display: inline-block;
-      background-color: #000000;
-      width: 180px;
-      height: 60px;
-      vertical-align: middle;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      border-radius: 5px; }
-      .container .app-store .app-store-btn img {
-        padding: 10px 0; }
-      .container .app-store .app-store-btn:last-child {
-        margin-left: 20px; }
-        .container .app-store .app-store-btn:last-child img {
-          padding: 8px 0; }
-    .container .app-store .app-store-msg {
-      font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
-      font-weight: normal !important;
-      font-style: normal !important;
-      color: #ffffff;
-      text-align: center;
-      font-size: 16px;
-      margin-top: 24px; }
-
-.info-wrap .container {
-  height: inherit; }
-.info-wrap img {
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-.info-wrap .info {
-  position: relative;
-  padding: 60px 0;
-  height: inherit;
-  text-align: center; }
-  .info-wrap .info ul {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 60px;
-    margin: 0 auto; }
-  .info-wrap .info p {
-    color: #ffffff;
+.policy-wrap {
+  width: 648px;
+  margin: 0 auto;
+  padding: 60px 0; }
+  .policy-wrap a {
+    color: #26b6b6; }
+    .policy-wrap a:hover {
+      text-decoration: underline; }
+  .policy-wrap p {
     font-size: 18px;
-    text-align: left; }
-    .info-wrap .info p:first-child {
-      font-size: 36px;
-      margin: 0 auto 32px auto; }
-    .info-wrap .info p:last-child {
-      margin-top: 32px; }
+    line-height: 1.5;
+    margin-bottom: 15px; }
+    .policy-wrap p.head {
+      font-size: 24px; }
+  .policy-wrap ul.number {
+    list-style: decimal;
+    padding-left: 30px; }
+    .policy-wrap ul.number li {
+      display: list-item;
+      font-size: 18px; }
+  .policy-wrap ul.alphabet {
+    list-style: lower-alpha;
+    padding-left: 40px; }
+  .policy-wrap ul.roman {
+    list-style: lower-roman;
+    padding-left: 40px; }
 
-.guide-wrap p {
-  color: #262636;
-  font-size: 36px;
-  text-align: center; }
-.guide-wrap ul {
-  margin: 0 0 60px 0; }
-  .guide-wrap ul li {
-    width: 200px; }
-    .guide-wrap ul li p {
-      font-size: 18px;
-      margin: 24px auto 0 auto; }
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=privacy.css.map */

@@ -29,6 +29,7 @@
 
     .app-store-btn-wrap {
       text-align: center;
+      font-size: 0;
     }
 
     .app-store-btn {
@@ -38,13 +39,13 @@
       height: 60px;
       vertical-align: middle;
       @include border-radius();
-      text-align: center;
 
       img {
         padding: 10px 0;
       }
 
       &:last-child {
+        margin-left: 20px;
         img {
           padding: 8px 0;
         }

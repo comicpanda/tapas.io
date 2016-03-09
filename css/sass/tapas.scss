@@ -4,6 +4,9 @@ html, body {
   @include f-qsr;
   @include rm-lh;
   letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 img {
@@ -31,14 +34,14 @@ p {
 }
 
 header {
-  background: $color-black url('/public/images/bg-banner.png') no-repeat center;
-  background-size: 100%;
+  background: $color-black url('/public/images/bg-banner.png') no-repeat center center;
+  background-size: cover;
   opacity: 0.9;
 }
 
 footer {
   background-color: $color-yellow;
-  //overflow: hidden;
+  overflow: hidden;
 
   .container {
     text-align: center;
@@ -61,7 +64,18 @@ footer {
 }
 
 .social-menu {
+  position: relative;
+
   li {
+    &:first-child {
+      position: absolute;
+      top: 40px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
+
     a {
       display: block;
     }
@@ -103,6 +117,11 @@ footer {
   &.active {
     background-color: $color-white;
   }
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
 }
 
 // Small devices (landscape phones, 34em and up)
@@ -156,6 +175,10 @@ footer {
 
       &:last-child {
         margin-right: 0;
+      }
+
+      &:nth-child(2) {
+        margin-left: 0;
       }
     }
   }
@@ -241,6 +264,10 @@ footer {
 
       &:last-child {
         margin-right: 62px;
+      }
+
+      &:nth-child(2) {
+        margin-left: 70px;
       }
     }
   }
@@ -328,6 +355,10 @@ footer {
       &:last-child {
         margin-right: 62px;
       }
+
+      &:nth-child(2) {
+        margin-left: 70px;
+      }
     }
   }
 
@@ -413,6 +444,10 @@ footer {
 
       &:last-child {
         margin-right: 62px;
+      }
+
+      &:nth-child(2) {
+        margin-left: 70px;
       }
     }
   }

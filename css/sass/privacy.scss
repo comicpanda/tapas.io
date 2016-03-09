@@ -22,6 +22,10 @@
     &.head {
       font-size: 24px;
     }
+
+    &.last {
+      @include f-qsb;
+    }
   }
 
   ul.number {

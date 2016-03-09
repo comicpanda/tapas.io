@@ -70,12 +70,16 @@ footer {
     display: inline-block; }
     .logos a:first-child {
       margin-right: 12px; }
-  .logos.centered img {
-    display: block;
-    margin: 0 auto; }
-    .logos.centered img:first-child {
-      padding-top: 80px;
-      margin-bottom: 24px; }
+  .logos.centered {
+    overflow: auto;
+    float: none;
+    margin-top: 0; }
+    .logos.centered img {
+      display: block;
+      margin: 0 auto; }
+      .logos.centered img:first-child {
+        padding-top: 80px;
+        margin-bottom: 24px; }
 
 .stores {
   float: right;
@@ -348,6 +352,10 @@ footer {
     margin-bottom: 15px; }
     .policy-wrap p.head {
       font-size: 24px; }
+    .policy-wrap p.last {
+      font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: normal !important;
+      font-style: normal !important; }
   .policy-wrap ul.number {
     list-style: decimal;
     padding-left: 30px; }

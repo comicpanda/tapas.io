@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Tapas.io
+    link(rel='styleSheet', type='text/css', href='/public/css/bootstrap.min.css')
+    link(rel='styleSheet', type='text/css', href='/public/css/share.css')
+
+  body
+    header
+      .container
+        .logos
+          a
+            img(src='/public/images/ico-tapas.png', width=40)
+          a
+            img(src='/public/images/logo-tapas.png', width=84, height=32)
+        .stores
+          a(href='')
+            img(src='/public/images/ico-appstore.png')
+          a(href='')
+            img(src='/public/images/ico-googleplay.png')
+    .content
+      .container
+        .thumb
+          img(src='#{episode.thumb.file_url}', width=120)
+        .info
+          p.main-title "#{episode.title}"
+          .creator
+            div
+              img(src='#{episode.thumb.file_url}', width=40)
+            div
+              span.series series title
+              span.scene , Ep. #{episode.scene}
+              p.name creator name
+          .description
+            p "#{episode.description}"
+          .tapas
+            p Read #[span.series series] and tens of thousands of other stories on Tapas.
+            p Get the app to sign up.
+            .app-store
+              .app-store-btn-wrap
+                a.app-store-btn.apple
+                  img(src='/public/images/get-appstore.png')
+                a.app-store-btn.google
+                  img(src='/public/images/get-googleplay.png')
+    footer
+      .container
+        ul.social-menu
+          li
+            a(href='/')
+              img(src='/public/images/bg-tapaspocket.png')
+          li
+            a(href='https://www.facebook.com/tapasapp')
+              img(src='/public/images/social-fb.png')
+          li
+            a(href='')
+              img(src='/public/images/social-tw.png')
+          li
+            a(href='')
+              img(src='/public/images/social-tb.png')
+          li
+            a(href='')
+              img(src='/public/images/social-md.png')
+          li
+            a(href='')
+              img(src='/public/images/social-ig.png')
+        ul.tapas-menu
+          li
+            a(href='/about') About
+          li
+            a(href='/help') Help
+          li
+            a(href='/') Blog
+          li
+            a(href='/') Press
+          li
+            a(href='mailto:hello@tapas.io') Contact
+          li
+            a(href='/') Publishers
+        .company
+          p &copy; 2016 Tapas Media.
+          p Made with Seoul in San Francisco.
+          p
+            a(href='/privacy') Privacy
+            &nbsp;&bullet;&nbsp;
+            a(href='/tos') Terms

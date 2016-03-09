@@ -16,12 +16,18 @@ a, a:hover {
 
 ul {
   padding: 0;
+  margin: 0;
   list-style-type: none;
   font-size: 0;
 
   li {
     display: inline-block;
   }
+}
+
+p {
+  line-height: 1;
+  margin: 0;
 }
 
 header {
@@ -32,11 +38,19 @@ header {
 
 footer {
   background-color: $color-yellow;
-  overflow: hidden;
+  //overflow: hidden;
 
   .container {
-    margin-top: 60px;
     text-align: center;
+
+    a {
+      @include f-qsb;
+      color: $color-black;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
   }
 }
 
@@ -48,37 +62,30 @@ footer {
 
 .social-menu {
   li {
-    margin-right: 20px;
-
-    &:last-child {
-      margin-right: 0;
+    a {
+      display: block;
     }
+  }
+
+  img {
+    vertical-align: baseline;
   }
 }
 
 .tapas-menu {
-  @include f-qsb;
-  font-size: 16px;
-
-  a {
-    color: $color-black;
-
-    &:hover {
-      color: $color-white;
-    }
-  }
-
   li {
-    margin-right: 20px;
-
-    &:first-child {
-      margin-left: 65px;
-    }
-
     &:last-child {
       margin-right: 0;
     }
+
+    a {
+      line-height: 1;
+    }
   }
+}
+
+.company {
+  font-size: 14px;
 }
 
 .dot {
@@ -137,6 +144,47 @@ footer {
       }
     }
   }
+
+  .social-menu {
+    li {
+      margin-right: 20px;
+
+      &:first-child {
+        display: none;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .tapas-menu {
+    font-size: 16px;
+    margin: 40px auto 32px auto;
+
+    li {
+      display: block;
+      margin: 0 0 24px 0;
+    }
+  }
+
+  .company {
+    margin-bottom: 60px;
+
+    p {
+      display: block;
+
+      &:first-child {
+        margin-bottom: 2px;
+      }
+
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 48em and up)
@@ -161,7 +209,7 @@ footer {
     }
 
     .info {
-      margin-left: 328px;
+      margin-left: 368px;
     }
   }
 
@@ -178,6 +226,47 @@ footer {
         &:last-child {
           margin-right: 0;
         }
+      }
+    }
+  }
+
+  .social-menu {
+    li {
+      margin-right: 24px;
+
+      &:first-child {
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      &:last-child {
+        margin-right: 62px;
+      }
+    }
+  }
+
+  .tapas-menu {
+    font-size: 18px;
+    margin: 32px auto 24px auto;
+
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+  }
+
+  .company {
+    margin-bottom: 24px;
+
+    p {
+      display: inline-block;
+
+      &:first-child {
+        margin-right: 3px;
+      }
+
+      &:last-child {
+        margin-left: 5px;
       }
     }
   }
@@ -226,6 +315,47 @@ footer {
       }
     }
   }
+
+  .social-menu {
+    li {
+      margin-right: 24px;
+
+      &:first-child {
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      &:last-child {
+        margin-right: 62px;
+      }
+    }
+  }
+
+  .tapas-menu {
+    font-size: 18px;
+    margin: 32px auto 24px auto;
+
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+  }
+
+  .company {
+    margin-bottom: 24px;
+
+    p {
+      display: inline-block;
+
+      &:first-child {
+        margin-right: 3px;
+      }
+
+      &:last-child {
+        margin-left: 5px;
+      }
+    }
+  }
 }
 
 // Extra large devices (large desktops, 75em and up)
@@ -268,6 +398,47 @@ footer {
           display: inline-block;
           margin-right: 0;
         }
+      }
+    }
+  }
+
+  .social-menu {
+    li {
+      margin-right: 24px;
+
+      &:first-child {
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      &:last-child {
+        margin-right: 62px;
+      }
+    }
+  }
+
+  .tapas-menu {
+    font-size: 18px;
+    margin: 32px auto 24px auto;
+
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+  }
+
+  .company {
+    margin-bottom: 24px;
+
+    p {
+      display: inline-block;
+
+      &:first-child {
+        margin-right: 3px;
+      }
+
+      &:last-child {
+        margin-left: 5px;
       }
     }
   }

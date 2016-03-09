@@ -21,11 +21,12 @@
     @include f-qsr;
     color: $color-white;
     text-align: center;
-    line-height: 1;
     margin-top: 32px;
   }
 
   .app-store {
+    margin-top: 60px;
+
     .app-store-btn-wrap {
       text-align: center;
     }
@@ -55,7 +56,6 @@
       color: $color-white;
       text-align: center;
       font-size: 16px;
-      line-height: 1;
       margin-top: 24px;
     }
   }
@@ -73,11 +73,16 @@
   }
 
   .info {
+    position: relative;
     padding: 60px 0;
     height: inherit;
     text-align: center;
 
     ul {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 60px;
       margin: 0 auto;
     }
 
@@ -85,11 +90,14 @@
       color: $color-white;
       font-size: 18px;
       text-align: left;
-      line-height: 1;
 
       &:first-child {
         font-size: 36px;
         margin: 0 auto 32px auto;
+      }
+
+      &:last-child {
+        margin-top: 32px;
       }
     }
   }
@@ -100,7 +108,6 @@
     color: $color-black;
     font-size: 36px;
     text-align: center;
-    line-height: 1;
   }
 
   ul {

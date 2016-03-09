@@ -25,10 +25,15 @@ a, a:hover {
 
 ul {
   padding: 0;
+  margin: 0;
   list-style-type: none;
   font-size: 0; }
   ul li {
     display: inline-block; }
+
+p {
+  line-height: 1;
+  margin: 0; }
 
 header {
   background: #262636 url("/public/images/bg-banner.png") no-repeat center;
@@ -36,35 +41,32 @@ header {
   opacity: 0.9; }
 
 footer {
-  background-color: #fcb606;
-  overflow: hidden; }
+  background-color: #fcb606; }
   footer .container {
-    margin-top: 60px;
     text-align: center; }
+    footer .container a {
+      font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: normal !important;
+      font-style: normal !important;
+      color: #262636; }
+      footer .container a:hover {
+        color: #ffffff; }
 
 .content.inverse {
   background-color: #262636; }
 
-.social-menu li {
-  margin-right: 20px; }
-  .social-menu li:last-child {
-    margin-right: 0; }
+.social-menu li a {
+  display: block; }
+.social-menu img {
+  vertical-align: baseline; }
 
-.tapas-menu {
-  font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: normal !important;
-  font-style: normal !important;
-  font-size: 16px; }
-  .tapas-menu a {
-    color: #262636; }
-    .tapas-menu a:hover {
-      color: #ffffff; }
-  .tapas-menu li {
-    margin-right: 20px; }
-    .tapas-menu li:first-child {
-      margin-left: 65px; }
-    .tapas-menu li:last-child {
-      margin-right: 0; }
+.tapas-menu li:last-child {
+  margin-right: 0; }
+.tapas-menu li a {
+  line-height: 1; }
+
+.company {
+  font-size: 14px; }
 
 .dot {
   width: 12px;
@@ -102,7 +104,31 @@ footer {
     margin: 60px auto 40px auto; }
   .guide-wrap ul li {
     display: block;
-    margin: 0 auto 40px auto; } }
+    margin: 0 auto 40px auto; }
+
+  .social-menu li {
+    margin-right: 20px; }
+    .social-menu li:first-child {
+      display: none;
+      margin-right: 0; }
+    .social-menu li:last-child {
+      margin-right: 0; }
+
+  .tapas-menu {
+    font-size: 16px;
+    margin: 40px auto 32px auto; }
+    .tapas-menu li {
+      display: block;
+      margin: 0 0 24px 0; }
+
+  .company {
+    margin-bottom: 60px; }
+    .company p {
+      display: block; }
+      .company p:first-child {
+        margin-bottom: 2px; }
+      .company p:last-child {
+        margin-top: 20px; } }
 @media (min-width: 48em) {
   header {
     height: 600px; }
@@ -118,7 +144,7 @@ footer {
     .info-wrap img {
       display: block; }
     .info-wrap .info {
-      margin-left: 328px; }
+      margin-left: 368px; }
 
   .guide-wrap p {
     margin: 60px auto 32px auto; }
@@ -126,7 +152,31 @@ footer {
     display: inline-block;
     margin: 0 24px 0 0; }
     .guide-wrap ul li:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+
+  .social-menu li {
+    margin-right: 24px; }
+    .social-menu li:first-child {
+      display: inline-block;
+      margin-right: 8px; }
+    .social-menu li:last-child {
+      margin-right: 62px; }
+
+  .tapas-menu {
+    font-size: 18px;
+    margin: 32px auto 24px auto; }
+    .tapas-menu li {
+      display: inline-block;
+      margin: 0 20px 0 0; }
+
+  .company {
+    margin-bottom: 24px; }
+    .company p {
+      display: inline-block; }
+      .company p:first-child {
+        margin-right: 3px; }
+      .company p:last-child {
+        margin-left: 5px; } }
 @media (min-width: 62em) {
   header {
     height: 600px; }
@@ -150,7 +200,31 @@ footer {
     margin: 0 80px 0 0; }
     .guide-wrap ul li:last-child {
       display: inline-block;
-      margin-right: 0; } }
+      margin-right: 0; }
+
+  .social-menu li {
+    margin-right: 24px; }
+    .social-menu li:first-child {
+      display: inline-block;
+      margin-right: 8px; }
+    .social-menu li:last-child {
+      margin-right: 62px; }
+
+  .tapas-menu {
+    font-size: 18px;
+    margin: 32px auto 24px auto; }
+    .tapas-menu li {
+      display: inline-block;
+      margin: 0 20px 0 0; }
+
+  .company {
+    margin-bottom: 24px; }
+    .company p {
+      display: inline-block; }
+      .company p:first-child {
+        margin-right: 3px; }
+      .company p:last-child {
+        margin-left: 5px; } }
 @media (min-width: 75em) {
   header {
     height: 600px; }
@@ -174,7 +248,31 @@ footer {
     margin: 0 80px 0 0; }
     .guide-wrap ul li:last-child {
       display: inline-block;
-      margin-right: 0; } }
+      margin-right: 0; }
+
+  .social-menu li {
+    margin-right: 24px; }
+    .social-menu li:first-child {
+      display: inline-block;
+      margin-right: 8px; }
+    .social-menu li:last-child {
+      margin-right: 62px; }
+
+  .tapas-menu {
+    font-size: 18px;
+    margin: 32px auto 24px auto; }
+    .tapas-menu li {
+      display: inline-block;
+      margin: 0 20px 0 0; }
+
+  .company {
+    margin-bottom: 24px; }
+    .company p {
+      display: inline-block; }
+      .company p:first-child {
+        margin-right: 3px; }
+      .company p:last-child {
+        margin-left: 5px; } }
 .container {
   position: relative; }
   .container .logos img {
@@ -189,34 +287,34 @@ footer {
     font-style: normal !important;
     color: #ffffff;
     text-align: center;
-    line-height: 1;
     margin-top: 32px; }
-  .container .app-store .app-store-btn-wrap {
-    text-align: center; }
-  .container .app-store .app-store-btn {
-    display: inline-block;
-    background-color: #000000;
-    width: 180px;
-    height: 60px;
-    vertical-align: middle;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    text-align: center; }
-    .container .app-store .app-store-btn img {
-      padding: 10px 0; }
-    .container .app-store .app-store-btn:last-child img {
-      padding: 8px 0; }
-  .container .app-store .app-store-msg {
-    font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: normal !important;
-    font-style: normal !important;
-    color: #ffffff;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1;
-    margin-top: 24px; }
+  .container .app-store {
+    margin-top: 60px; }
+    .container .app-store .app-store-btn-wrap {
+      text-align: center; }
+    .container .app-store .app-store-btn {
+      display: inline-block;
+      background-color: #000000;
+      width: 180px;
+      height: 60px;
+      vertical-align: middle;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      text-align: center; }
+      .container .app-store .app-store-btn img {
+        padding: 10px 0; }
+      .container .app-store .app-store-btn:last-child img {
+        padding: 8px 0; }
+    .container .app-store .app-store-msg {
+      font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: normal !important;
+      font-style: normal !important;
+      color: #ffffff;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 24px; }
 
 .info-wrap .container {
   height: inherit; }
@@ -225,25 +323,30 @@ footer {
   bottom: 0;
   left: 0; }
 .info-wrap .info {
+  position: relative;
   padding: 60px 0;
   height: inherit;
   text-align: center; }
   .info-wrap .info ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
     margin: 0 auto; }
   .info-wrap .info p {
     color: #ffffff;
     font-size: 18px;
-    text-align: left;
-    line-height: 1; }
+    text-align: left; }
     .info-wrap .info p:first-child {
       font-size: 36px;
       margin: 0 auto 32px auto; }
+    .info-wrap .info p:last-child {
+      margin-top: 32px; }
 
 .guide-wrap p {
   color: #262636;
   font-size: 36px;
-  text-align: center;
-  line-height: 1; }
+  text-align: center; }
 .guide-wrap ul {
   margin: 0 0 60px 0; }
   .guide-wrap ul li {

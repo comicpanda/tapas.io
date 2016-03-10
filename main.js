@@ -23,7 +23,7 @@ app.get('/policies/privacy', function (req, res) {
   res.redirect('/privacy');
 });
 
-app.get('/tos', function (req, res) {
+app.get('/terms', function (req, res) {
   res.sendFile(__dirname + '/views/' + 'tos.html');
 });
 

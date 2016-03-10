@@ -552,7 +552,8 @@ ul.line {
     ul.line li .answer {
       display: none;
       background-color: #f6f6f6;
-      padding: 16px 28px; }
+      padding: 16px 28px;
+      overflow: hidden; }
       ul.line li .answer p {
         font-family: "QuicksandRegular", "Helvetica Neue", Helvetica, sans-serif;
         font-weight: normal !important;
@@ -560,7 +561,8 @@ ul.line {
         font-size: 18px;
         line-height: 1.2;
         margin: 0;
-        vertical-align: text-top; }
+        vertical-align: text-top;
+        word-break: break-all; }
         ul.line li .answer p.date, ul.line li .answer p.link {
           font-size: 14px;
           color: #a6a6a6;

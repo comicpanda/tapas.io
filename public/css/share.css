@@ -404,7 +404,8 @@ header {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      text-align: center; }
       .content .container .app-store .app-store-btn img {
         padding: 10px 0; }
       .content .container .app-store .app-store-btn:last-child {

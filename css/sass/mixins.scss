@@ -25,8 +25,30 @@
 }
 
 @mixin border-radius($radius: 5px) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
+  @include border-r($radius, $radius, $radius, $radius);
 }
+
+@mixin border-radius-top($radius: 5px) {
+  @include border-r($radius, $radius, 0, 0);
+}
+
+@mixin border-radius-bottom($radius: 5px) {
+  @include border-r(0, 0, $radius, $radius);
+}
+
+@mixin border-r($tl, $tr, $br, $bl) {
+  -webkit-border-radius: $tl $tr $br $bl;
+  -moz-border-radius: $tl $tr $br $bl;
+  -ms-border-radius: $tl $tr $br $bl;
+  border-radius: $tl $tr $br $bl;
+}
+
+@mixin rotate($degrees: 90deg) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+// mixin for Responsive

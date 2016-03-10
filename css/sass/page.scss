@@ -1,0 +1,148 @@
+@import "tapas";
+
+
+.page-wrap {
+  width: 648px;
+  margin: 0 auto;
+
+  a {
+    color: $color-l-blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+    &.head {
+      font-size: 24px;
+    }
+
+    &.last {
+      @include f-qsb;
+    }
+  }
+
+  ul.number {
+    list-style: decimal;
+    padding-left: 30px;
+
+    li {
+      display: list-item;
+      font-size: 18px;
+      border: none
+    }
+  }
+
+  ul.alphabet {
+    list-style: lower-alpha;
+    padding-left: 40px;
+  }
+
+  ul.roman {
+    list-style: lower-roman;
+    padding-left: 40px;
+  }
+}
+
+ul.line {
+  margin-top: 32px;
+  border-top: 1px solid $color-d6;
+  border-bottom: 1px solid $color-d6;
+
+  li {
+    display: block;
+    border-bottom: 1px solid $color-e6;
+
+    &:last-child {
+      border: none;
+    }
+
+    &.active {
+      .answer {
+        display: block;
+      }
+
+      .bullet {
+        @include rotate(135deg);
+        margin-bottom: 5px;
+      }
+    }
+
+    p {
+      display: inline-block;
+      @include f-qsb;
+      color: $color-d-gray;
+      font-size: 20px;
+      line-height: 1;
+      margin: 16px 0;
+    }
+
+    .question {
+      cursor: pointer;
+
+      a, p {
+        vertical-align: middle;
+      }
+
+      &:hover {
+        p {
+          color: $color-l-blue;
+        }
+      }
+    }
+
+    .answer {
+      display: none;
+      background-color: $color-f6;
+      padding: 16px 28px;
+
+      p {
+        @include f-qsr;
+        font-size: 18px;
+        line-height: 1.2;
+        margin: 0;
+        vertical-align: text-top;
+
+        &.date, &.link {
+          font-size: 14px;
+          color: $color-a6;
+          margin-top: 16px;
+        }
+
+        &.link {
+          float: right;
+          cursor: pointer;
+
+          a {
+            color: $color-a6;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-color: $color-black;
+  margin: 0 12px 0 3px;
+  @include rotate(45deg);
+  cursor: none;
+
+  i {
+    display: block;
+    width: 8px;
+    height: 20px;
+    background-color: $color-white;
+    @include rotate(-45deg);
+  }
+}

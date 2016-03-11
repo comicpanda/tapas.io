@@ -1,4 +1,5 @@
 @import "mixins";
+@import "mixins-responsive";
 
 html, body {
   @include f-qsr;
@@ -71,6 +72,63 @@ footer {
 
 .container {
   padding: 0;
+}
+
+.page-w-wrap, .page-wrap {
+  margin: 0 auto;
+}
+
+.error-bg-404 {
+  overflow: hidden;
+  background: url('/public/images/404-bgstripes.png');
+  text-align: center;
+
+  img {
+    margin-top: 10px;
+    margin-bottom: 13px;
+
+    &:first-child {
+      float: left;
+      margin-top: 32px;
+    }
+
+    &:last-child {
+      float: right;
+      margin-top: 64px;
+    }
+  }
+}
+
+.error-bg-500 {
+  background: url('/public/images/500-bgstripes.png');
+  text-align: center;
+
+  img {
+    margin-top: 20px;
+  }
+}
+
+.error {
+  padding: 60px 0;
+  text-align: center;
+
+  p {
+    @include f-qsr;
+    font-size: 18px;
+    line-height: 2.5;
+
+    &:first-child {
+      @include f-qsb;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 32px;
+    }
+
+    a {
+      @include f-qsb;
+      color: $color-l-blue;
+    }
+  }
 }
 
 .title {
@@ -305,6 +363,10 @@ footer {
 
 // Small devices (landscape phones, 20em and up)
 @media (min-width: 20em) {
+  .logos > .logo-txt {
+    display: none;
+  }
+
   .nav-line {
     display: none;
   }
@@ -329,6 +391,10 @@ footer {
     .container {
       padding: 0;
     }
+  }
+
+  .page-w-wrap {
+    width: 280px;
   }
 
   .page-wrap {
@@ -432,10 +498,16 @@ footer {
       }
     }
   }
+
+  @include share-mobile;
 }
 
 // Medium devices (tablets, 48em and up)
 @media (min-width: 48em) {
+  .logos > .logo-txt {
+    display: inline-block;
+  }
+
   .nav-line {
     display: block;
   }
@@ -460,6 +532,10 @@ footer {
     .container {
       padding: 0;
     }
+  }
+
+  .page-w-wrap {
+    width: 684px;
   }
 
   .page-wrap {
@@ -567,10 +643,16 @@ footer {
       }
     }
   }
+
+  @include share-web;
 }
 
 // Large devices (desktops, 62em and up)
 @media (min-width: 62em) {
+  .logos > .logo-txt {
+    display: inline-block;
+  }
+
   .nav-line {
     display: block;
   }
@@ -595,6 +677,10 @@ footer {
     .container {
       padding: 0 80px;
     }
+  }
+
+  .page-w-wrap {
+    width: 684px;
   }
 
   .page-wrap {
@@ -702,10 +788,16 @@ footer {
       }
     }
   }
+
+  @include share-web;
 }
 
 // Extra large devices (large desktops, 75em and up)
 @media (min-width: 75em) {
+  .logos > .logo-txt {
+    display: inline-block;
+  }
+
   .nav-line {
     display: block;
   }
@@ -732,6 +824,10 @@ footer {
     }
   }
 
+  .page-w-wrap {
+    width: 684px;
+  }
+
   .page-wrap {
     width: 648px;
 
@@ -743,12 +839,6 @@ footer {
 
     .prefix {
       display: inline-block;
-    }
-  }
-
-  .app-store-btn {
-    &:last-child {
-      margin-left: 20px;
     }
   }
 
@@ -837,4 +927,6 @@ footer {
       }
     }
   }
+
+  @include share-web;
 }

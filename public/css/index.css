@@ -10,6 +10,18 @@
   font-family: 'QuicksandRegular';
   src: local("Quicksand Regular"), local("Quicksand-Regular"), url("/public/fonts/Quicksand-Regular.otf") format("opentype");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'QuicksandBold';
+  src: local("Quicksand Bold"), local("Quicksand-Bold"), url("/public/fonts/Quicksand-Bold.otf") format("opentype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'QuicksandLight';
+  src: local("Quicksand Light"), local("Quicksand-Light"), url("/public/fonts/Quicksand-Light.otf") format("opentype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'QuicksandRegular';
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url("/public/fonts/Quicksand-Regular.otf") format("opentype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 html, body {
   font-family: "QuicksandRegular", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal !important;
@@ -66,6 +78,51 @@ footer {
 
 .container {
   padding: 0; }
+
+.page-w-wrap, .page-wrap {
+  margin: 0 auto; }
+
+.error-bg-404 {
+  overflow: hidden;
+  background: url("/public/images/404-bgstripes.png");
+  text-align: center; }
+  .error-bg-404 img {
+    margin-top: 10px;
+    margin-bottom: 13px; }
+    .error-bg-404 img:first-child {
+      float: left;
+      margin-top: 32px; }
+    .error-bg-404 img:last-child {
+      float: right;
+      margin-top: 64px; }
+
+.error-bg-500 {
+  background: url("/public/images/500-bgstripes.png");
+  text-align: center; }
+  .error-bg-500 img {
+    margin-top: 20px; }
+
+.error {
+  padding: 60px 0;
+  text-align: center; }
+  .error p {
+    font-family: "QuicksandRegular", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 18px;
+    line-height: 2.5; }
+    .error p:first-child {
+      font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: normal !important;
+      font-style: normal !important;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 32px; }
+    .error p a {
+      font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: normal !important;
+      font-style: normal !important;
+      color: #26b6b6; }
 
 .title {
   text-align: center; }
@@ -241,6 +298,9 @@ footer {
   visibility: hidden !important; }
 
 @media (min-width: 20em) {
+  .logos > .logo-txt {
+    display: none; }
+
   .nav-line {
     display: none; }
 
@@ -256,6 +316,9 @@ footer {
       font-size: 20px; }
   .index .container {
     padding: 0; }
+
+  .page-w-wrap {
+    width: 280px; }
 
   .page-wrap {
     width: 280px; }
@@ -310,8 +373,46 @@ footer {
       .company p:first-child {
         margin-bottom: 2px; }
       .company p:last-child {
-        margin-top: 20px; } }
+        margin-top: 20px; }
+
+  .share-page.page-w-wrap {
+    padding: 20px 0 60px 0; }
+  .share-page .thumb {
+    display: block;
+    text-align: center;
+    margin-bottom: 24px; }
+  .share-page .info {
+    display: block; }
+  .share-page .main-title {
+    font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 24px;
+    color: #262636;
+    margin-bottom: 8px;
+    text-align: center; }
+  .share-page .creator {
+    text-align: center;
+    margin-bottom: 32px; }
+    .share-page .creator .creator-thumb {
+      display: none; }
+  .share-page .description {
+    padding-bottom: 32px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #e6e6e6; }
+  .share-page .tapas {
+    margin-top: 32px;
+    font-size: 18px; }
+  .share-page .app-store {
+    margin-top: 24px; }
+    .share-page .app-store .app-store-btn-wrap {
+      text-align: center;
+      font-size: 0; } }
 @media (min-width: 48em) {
+  .logos > .logo-txt {
+    display: inline-block; }
+
   .nav-line {
     display: block; }
 
@@ -327,6 +428,9 @@ footer {
       font-size: 24px; }
   .index .container {
     padding: 0; }
+
+  .page-w-wrap {
+    width: 684px; }
 
   .page-wrap {
     width: 648px; }
@@ -383,8 +487,51 @@ footer {
       .company p:first-child {
         margin-right: 3px; }
       .company p:last-child {
-        margin-left: 5px; } }
+        margin-left: 5px; }
+
+  .share-page.page-w-wrap {
+    padding: 60px 0; }
+  .share-page .thumb {
+    display: inline-block;
+    margin-right: 19px;
+    vertical-align: top; }
+  .share-page .info {
+    width: 540px;
+    display: inline-block; }
+  .share-page .main-title {
+    font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 32px;
+    color: #262636;
+    margin-bottom: 8px;
+    text-align: left; }
+  .share-page .creator {
+    text-align: left;
+    margin-bottom: 24px; }
+    .share-page .creator .creator-thumb {
+      display: inline-block; }
+  .share-page .description {
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    border: none; }
+  .share-page .tapas {
+    font-size: 16px; }
+  .share-page .app-store {
+    margin-top: 20px; }
+    .share-page .app-store .app-store-btn-wrap {
+      text-align: left;
+      font-size: 0; }
+    .share-page .app-store .app-store-btn:last-child {
+      margin-left: 20px; }
+      .share-page .app-store .app-store-btn:last-child img {
+        padding: 8px 0; } }
 @media (min-width: 62em) {
+  .logos > .logo-txt {
+    display: inline-block; }
+
   .nav-line {
     display: block; }
 
@@ -400,6 +547,9 @@ footer {
       font-size: 24px; }
   .index .container {
     padding: 0 80px; }
+
+  .page-w-wrap {
+    width: 684px; }
 
   .page-wrap {
     width: 648px; }
@@ -456,8 +606,51 @@ footer {
       .company p:first-child {
         margin-right: 3px; }
       .company p:last-child {
-        margin-left: 5px; } }
+        margin-left: 5px; }
+
+  .share-page.page-w-wrap {
+    padding: 60px 0; }
+  .share-page .thumb {
+    display: inline-block;
+    margin-right: 19px;
+    vertical-align: top; }
+  .share-page .info {
+    width: 540px;
+    display: inline-block; }
+  .share-page .main-title {
+    font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 32px;
+    color: #262636;
+    margin-bottom: 8px;
+    text-align: left; }
+  .share-page .creator {
+    text-align: left;
+    margin-bottom: 24px; }
+    .share-page .creator .creator-thumb {
+      display: inline-block; }
+  .share-page .description {
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    border: none; }
+  .share-page .tapas {
+    font-size: 16px; }
+  .share-page .app-store {
+    margin-top: 20px; }
+    .share-page .app-store .app-store-btn-wrap {
+      text-align: left;
+      font-size: 0; }
+    .share-page .app-store .app-store-btn:last-child {
+      margin-left: 20px; }
+      .share-page .app-store .app-store-btn:last-child img {
+        padding: 8px 0; } }
 @media (min-width: 75em) {
+  .logos > .logo-txt {
+    display: inline-block; }
+
   .nav-line {
     display: block; }
 
@@ -474,15 +667,15 @@ footer {
   .index .container {
     padding: 0 80px; }
 
+  .page-w-wrap {
+    width: 684px; }
+
   .page-wrap {
     width: 648px; }
     .page-wrap .question p {
       max-width: none; }
     .page-wrap .prefix {
       display: inline-block; }
-
-  .app-store-btn:last-child {
-    margin-left: 20px; }
 
   ul.number li, ul.alphabet li, ul.roman li {
     width: 100%; }
@@ -529,7 +722,47 @@ footer {
       .company p:first-child {
         margin-right: 3px; }
       .company p:last-child {
-        margin-left: 5px; } }
+        margin-left: 5px; }
+
+  .share-page.page-w-wrap {
+    padding: 60px 0; }
+  .share-page .thumb {
+    display: inline-block;
+    margin-right: 19px;
+    vertical-align: top; }
+  .share-page .info {
+    width: 540px;
+    display: inline-block; }
+  .share-page .main-title {
+    font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 32px;
+    color: #262636;
+    margin-bottom: 8px;
+    text-align: left; }
+  .share-page .creator {
+    text-align: left;
+    margin-bottom: 24px; }
+    .share-page .creator .creator-thumb {
+      display: inline-block; }
+  .share-page .description {
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    border: none; }
+  .share-page .tapas {
+    font-size: 16px; }
+  .share-page .app-store {
+    margin-top: 20px; }
+    .share-page .app-store .app-store-btn-wrap {
+      text-align: left;
+      font-size: 0; }
+    .share-page .app-store .app-store-btn:last-child {
+      margin-left: 20px; }
+      .share-page .app-store .app-store-btn:last-child img {
+        padding: 8px 0; } }
 .container {
   position: relative; }
   .container .slogan {

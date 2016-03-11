@@ -27,6 +27,13 @@ app.get('/terms', function (req, res) {
   res.sendFile(__dirname + '/views/' + 'terms.html');
 });
 
+app.get('/error-404', function (req, res) {
+  res.sendFile(__dirname + '/views/' + '404.html');
+});
+
+app.get('/error-500', function (req, res) {
+  res.sendFile(__dirname + '/views/' + '500.html');
+});
 app.listen(8082, function (){
   console.log('start server');
 });

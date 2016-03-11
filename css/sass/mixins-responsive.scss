@@ -126,3 +126,36 @@
     }
   }
 }
+
+@mixin e-404() {
+  .error-bg-404 {
+    img {
+      &:nth-child(2) {
+        margin-top: 10px;
+        margin-bottom: 13px;
+        width: inherit;
+      }
+
+      &:first-child {
+        display: block;
+        float: left;
+        margin-top: 32px;
+      }
+
+      &:last-child {
+        display: block;
+        float: right;
+        margin-top: 64px;
+      }
+    }
+  }
+}
+
+@mixin e-500() {
+  .error-bg-500 {
+    img {
+      width: inherit;
+      margin-top: 20px;
+    }
+  }
+}

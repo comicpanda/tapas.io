@@ -82,30 +82,11 @@ footer {
   overflow: hidden;
   background: url('/public/images/404-bgstripes.png');
   text-align: center;
-
-  img {
-    margin-top: 10px;
-    margin-bottom: 13px;
-
-    &:first-child {
-      float: left;
-      margin-top: 32px;
-    }
-
-    &:last-child {
-      float: right;
-      margin-top: 64px;
-    }
-  }
 }
 
 .error-bg-500 {
   background: url('/public/images/500-bgstripes.png');
   text-align: center;
-
-  img {
-    margin-top: 20px;
-  }
 }
 
 .error {
@@ -363,6 +344,31 @@ footer {
 
 // Small devices (landscape phones, 20em and up)
 @media (min-width: 20em) {
+  .error-bg-404 {
+    img {
+      &:nth-child(2) {
+        margin-top: 120px;
+        margin-bottom: 13px;
+        width: 280px;
+      }
+
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .error-bg-500 {
+    img {
+      width: 280px;
+      margin-top: 100px;
+    }
+  }
+
   .logos > .logo-txt {
     display: none;
   }
@@ -645,6 +651,8 @@ footer {
   }
 
   @include share-web;
+  @include e-404;
+  @include e-500;
 }
 
 // Large devices (desktops, 62em and up)
@@ -790,6 +798,8 @@ footer {
   }
 
   @include share-web;
+  @include e-404;
+  @include e-500;
 }
 
 // Extra large devices (large desktops, 75em and up)
@@ -929,4 +939,6 @@ footer {
   }
 
   @include share-web;
+  @include e-404;
+  @include e-500;
 }

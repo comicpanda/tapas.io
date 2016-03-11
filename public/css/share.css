@@ -86,21 +86,10 @@ footer {
   overflow: hidden;
   background: url("/public/images/404-bgstripes.png");
   text-align: center; }
-  .error-bg-404 img {
-    margin-top: 10px;
-    margin-bottom: 13px; }
-    .error-bg-404 img:first-child {
-      float: left;
-      margin-top: 32px; }
-    .error-bg-404 img:last-child {
-      float: right;
-      margin-top: 64px; }
 
 .error-bg-500 {
   background: url("/public/images/500-bgstripes.png");
   text-align: center; }
-  .error-bg-500 img {
-    margin-top: 20px; }
 
 .error {
   padding: 60px 0;
@@ -298,6 +287,19 @@ footer {
   visibility: hidden !important; }
 
 @media (min-width: 20em) {
+  .error-bg-404 img:nth-child(2) {
+    margin-top: 120px;
+    margin-bottom: 13px;
+    width: 280px; }
+  .error-bg-404 img:first-child {
+    display: none; }
+  .error-bg-404 img:last-child {
+    display: none; }
+
+  .error-bg-500 img {
+    width: 280px;
+    margin-top: 100px; }
+
   .logos > .logo-txt {
     display: none; }
 
@@ -527,7 +529,24 @@ footer {
     .share-page .app-store .app-store-btn:last-child {
       margin-left: 20px; }
       .share-page .app-store .app-store-btn:last-child img {
-        padding: 8px 0; } }
+        padding: 8px 0; }
+
+  .error-bg-404 img:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    width: inherit; }
+  .error-bg-404 img:first-child {
+    display: block;
+    float: left;
+    margin-top: 32px; }
+  .error-bg-404 img:last-child {
+    display: block;
+    float: right;
+    margin-top: 64px; }
+
+  .error-bg-500 img {
+    width: inherit;
+    margin-top: 20px; } }
 @media (min-width: 62em) {
   .logos > .logo-txt {
     display: inline-block; }
@@ -646,7 +665,24 @@ footer {
     .share-page .app-store .app-store-btn:last-child {
       margin-left: 20px; }
       .share-page .app-store .app-store-btn:last-child img {
-        padding: 8px 0; } }
+        padding: 8px 0; }
+
+  .error-bg-404 img:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    width: inherit; }
+  .error-bg-404 img:first-child {
+    display: block;
+    float: left;
+    margin-top: 32px; }
+  .error-bg-404 img:last-child {
+    display: block;
+    float: right;
+    margin-top: 64px; }
+
+  .error-bg-500 img {
+    width: inherit;
+    margin-top: 20px; } }
 @media (min-width: 75em) {
   .logos > .logo-txt {
     display: inline-block; }
@@ -762,7 +798,24 @@ footer {
     .share-page .app-store .app-store-btn:last-child {
       margin-left: 20px; }
       .share-page .app-store .app-store-btn:last-child img {
-        padding: 8px 0; } }
+        padding: 8px 0; }
+
+  .error-bg-404 img:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    width: inherit; }
+  .error-bg-404 img:first-child {
+    display: block;
+    float: left;
+    margin-top: 32px; }
+  .error-bg-404 img:last-child {
+    display: block;
+    float: right;
+    margin-top: 64px; }
+
+  .error-bg-500 img {
+    width: inherit;
+    margin-top: 20px; } }
 header {
   height: 80px; }
 

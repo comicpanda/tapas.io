@@ -24,6 +24,11 @@
   line-height: 0;
 }
 
+@mixin rm-mp() {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin border-radius($radius: 5px) {
   @include border-r($radius, $radius, $radius, $radius);
 }

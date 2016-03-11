@@ -2,7 +2,6 @@
 
 
 .page-wrap {
-  width: 648px;
   margin: 0 auto;
 
   a {
@@ -34,7 +33,7 @@
     li {
       display: list-item;
       font-size: 18px;
-      border: none
+      border: none;
     }
   }
 
@@ -108,7 +107,7 @@ ul.line {
         line-height: 1.2;
         margin: 0;
         vertical-align: text-top;
-        word-break: break-all;
+        width: 100%;
 
         &.date, &.link {
           font-size: 14px;

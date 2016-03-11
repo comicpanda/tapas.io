@@ -3,9 +3,8 @@
 html, body {
   @include f-qsr;
   @include rm-lh;
+  @include rm-mp;
   letter-spacing: 0;
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
@@ -18,8 +17,7 @@ a, a:hover {
 }
 
 ul {
-  padding: 0;
-  margin: 0;
+  @include rm-mp;
   list-style-type: none;
   font-size: 0;
 
@@ -31,6 +29,7 @@ ul {
 p {
   line-height: 1;
   margin: 0;
+  word-wrap: break-word;
 }
 
 header {
@@ -333,6 +332,8 @@ footer {
   }
 
   .page-wrap {
+    width: 280px;
+
     .question {
       p {
         max-width: 235px;
@@ -353,6 +354,18 @@ footer {
 
     .info {
       margin-left: 0px;
+    }
+  }
+
+  ul.policy {
+    li {
+      width: 95%;
+    }
+  }
+
+  ul.number, ul.alphabet, ul.roman {
+    li {
+      width: 90%;
     }
   }
 
@@ -444,6 +457,8 @@ footer {
   }
 
   .page-wrap {
+    width: 648px;
+
     .question {
       p {
         max-width: none;
@@ -452,6 +467,18 @@ footer {
 
     .prefix {
       display: inline-block;
+    }
+  }
+
+  ul.number, ul.alphabet, ul.roman {
+    li {
+      width: 100%;
+    }
+  }
+
+  ul.policy {
+    li {
+      width: 100%;
     }
   }
 
@@ -559,6 +586,8 @@ footer {
   }
 
   .page-wrap {
+    width: 648px;
+
     .question {
       p {
         max-width: none;
@@ -567,6 +596,18 @@ footer {
 
     .prefix {
       display: inline-block;
+    }
+  }
+
+  ul.number, ul.alphabet, ul.roman {
+    li {
+      width: 100%;
+    }
+  }
+
+  ul.policy {
+    li {
+      width: 100%;
     }
   }
 
@@ -674,6 +715,8 @@ footer {
   }
 
   .page-wrap {
+    width: 648px;
+
     .question {
       p {
         max-width: none;
@@ -682,6 +725,18 @@ footer {
 
     .prefix {
       display: inline-block;
+    }
+  }
+
+  ul.number, ul.alphabet, ul.roman {
+    li {
+      width: 100%;
+    }
+  }
+
+  ul.policy {
+    li {
+      width: 100%;
     }
   }
 

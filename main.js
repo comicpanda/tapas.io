@@ -24,7 +24,7 @@ app.get('/policies/privacy', function (req, res) {
 });
 
 app.get('/terms', function (req, res) {
-  res.sendFile(__dirname + '/views/' + 'tos.html');
+  res.sendFile(__dirname + '/views/' + 'terms.html');
 });
 
 app.listen(8082, function (){

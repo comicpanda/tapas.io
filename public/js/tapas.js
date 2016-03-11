@@ -78,6 +78,11 @@
     }
   });
 
+  // TODO send SMS
+  //$('.js-send-txt').on('click tap', function (e) {
+  //  stopEvent(e);
+  //});
+
   var stopEvent = function (e) {
     if (!e) {
       return;

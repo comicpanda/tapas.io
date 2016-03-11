@@ -303,7 +303,7 @@ footer {
   visibility: hidden !important;
 }
 
-// Small devices (landscape phones, 34em and up)
+// Small devices (landscape phones, 20em and up)
 @media (min-width: 20em) {
   .nav-line {
     display: none;
@@ -345,15 +345,9 @@ footer {
     }
   }
 
-  .info-wrap {
-    height: 440px;
-
-    .screen {
-      display: none;
-    }
-
-    .info {
-      margin-left: 0px;
+  .app-store-btn {
+    &:last-child {
+      margin-left: 0;
     }
   }
 
@@ -366,6 +360,18 @@ footer {
   ul.number, ul.alphabet, ul.roman {
     li {
       width: 90%;
+    }
+  }
+
+  .info-wrap {
+    height: 440px;
+
+    .screen {
+      display: none;
+    }
+
+    .info {
+      margin-left: 0px;
     }
   }
 
@@ -467,6 +473,12 @@ footer {
 
     .prefix {
       display: inline-block;
+    }
+  }
+
+  .app-store-btn {
+    &:last-child {
+      margin-left: 20px;
     }
   }
 
@@ -599,6 +611,12 @@ footer {
     }
   }
 
+  .app-store-btn {
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+
   ul.number, ul.alphabet, ul.roman {
     li {
       width: 100%;
@@ -725,6 +743,12 @@ footer {
 
     .prefix {
       display: inline-block;
+    }
+  }
+
+  .app-store-btn {
+    &:last-child {
+      margin-left: 20px;
     }
   }
 

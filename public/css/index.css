@@ -264,18 +264,21 @@ footer {
     .page-wrap .prefix {
       display: none; }
 
-  .info-wrap {
-    height: 440px; }
-    .info-wrap .screen {
-      display: none; }
-    .info-wrap .info {
-      margin-left: 0px; }
+  .app-store-btn:last-child {
+    margin-left: 0; }
 
   ul.policy li {
     width: 95%; }
 
   ul.number li, ul.alphabet li, ul.roman li {
     width: 90%; }
+
+  .info-wrap {
+    height: 440px; }
+    .info-wrap .screen {
+      display: none; }
+    .info-wrap .info {
+      margin-left: 0px; }
 
   .guide-wrap p {
     margin: 60px auto 40px auto; }
@@ -331,6 +334,9 @@ footer {
       max-width: none; }
     .page-wrap .prefix {
       display: inline-block; }
+
+  .app-store-btn:last-child {
+    margin-left: 20px; }
 
   ul.number li, ul.alphabet li, ul.roman li {
     width: 100%; }
@@ -402,6 +408,9 @@ footer {
     .page-wrap .prefix {
       display: inline-block; }
 
+  .app-store-btn:last-child {
+    margin-left: 20px; }
+
   ul.number li, ul.alphabet li, ul.roman li {
     width: 100%; }
 
@@ -471,6 +480,9 @@ footer {
       max-width: none; }
     .page-wrap .prefix {
       display: inline-block; }
+
+  .app-store-btn:last-child {
+    margin-left: 20px; }
 
   ul.number li, ul.alphabet li, ul.roman li {
     width: 100%; }
@@ -544,18 +556,18 @@ footer {
       border-radius: 5px 5px 5px 5px; }
       .container .app-store .app-store-btn img {
         padding: 10px 0; }
-      .container .app-store .app-store-btn:last-child {
-        margin-left: 20px; }
-        .container .app-store .app-store-btn:last-child img {
-          padding: 8px 0; }
+      .container .app-store .app-store-btn:last-child img {
+        padding: 8px 0; }
     .container .app-store .app-store-msg {
-      font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
-      font-weight: normal !important;
-      font-style: normal !important;
-      color: #ffffff;
       text-align: center;
-      font-size: 16px;
       margin-top: 24px; }
+      .container .app-store .app-store-msg a {
+        font-family: "QuicksandBold", "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: normal !important;
+        font-style: normal !important;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration: none; }
 
 .info-wrap .container {
   height: inherit; }

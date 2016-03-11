@@ -32,7 +32,6 @@
       }
 
       &:last-child {
-        margin-left: 20px;
         img {
           padding: 8px 0;
         }
@@ -40,11 +39,15 @@
     }
 
     .app-store-msg {
-      @include f-qsb;
-      color: $color-white;
       text-align: center;
-      font-size: 16px;
       margin-top: 24px;
+
+      a {
+        @include f-qsb;
+        color: $color-white;
+        font-size: 16px;
+        text-decoration: none;
+      }
     }
   }
 }

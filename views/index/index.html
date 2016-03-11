@@ -27,19 +27,43 @@
     </header>
     <div class="content inverse info-wrap">
         <div class="container">
-            <img src="/public/images/bg-phoneframe.png">
-            <div class="info">
-                <div>
-                    <p>Explore books, comics, & more</p>
-                    <p>Get lost in captivating stories from new and bestselling authors.</p>
-                    <p>With comedy, fantasy, romance, and more, there's something on Tapas for you.</p>
+            <div class="screen">
+                <img src="/public/images/bg-phoneframe.png">
+                <div class="screen-shot">
+                    <div class="screen-img active" id="_shot0"><img src="/public/images/screen-1.png"></div>
+                    <div class="screen-img hidden" id="_shot1"><img src="/public/images/screen-2.png"></div>
+                    <div class="screen-img hidden" id="_shot2"><img src="/public/images/screen-3.png"></div>
+                    <div class="screen-img hidden" id="_shot3"><img src="/public/images/screen-4.png"></div>
+                    <div class="screen-img hidden" id="_shot4"><img src="/public/images/screen-5.png"></div>
                 </div>
-                <ul>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot active"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
+            </div>
+            <div class="info js-info">
+                <div class="info-card js-info-card" id="_card0">
+                    <p>Explore books, comics, & more</p>
+                    <p>Lose yourself in captivating, hand-picked stories from new and bestselling authors.</p>
+                </div>
+                <div class="info-card js-info-card hidden" id="_card1">
+                    <p>Read bite-sized episodes</p>
+                    <p>Only have a few minutes to read? Tapas episodes fit your lifestyle. They’re perfect to snack or binge.</p>
+                </div>
+                <div class="info-card js-info-card hidden" id="_card2">
+                    <p>Discover stories you'll love</p>
+                    <p>With comedy, fantasy, romance, non-fiction and more, there's a series on Tapas for you.</p>
+                </div>
+                <div class="info-card js-info-card hidden" id="_card3">
+                    <p>Sample books and comics for free</p>
+                    <p>The first few episodes of most stories are free to read. Plus, Tapas features tons of completely free series created by our talented community.</p>
+                </div>
+                <div class="info-card js-info-card hidden" id="_card4">
+                    <p>Unlock surprises</p>
+                    <p>Open gifts to earn special rewards like free episodes, then share your favorite discoveries with friends.</p>
+                </div>
+                <ul class="dot-wrap">
+                    <li class="dot js-dot active" data-card="#_card0" data-shot="#_shot0"></li>
+                    <li class="dot js-dot" data-card="#_card1" data-shot="#_shot1"></li>
+                    <li class="dot js-dot" data-card="#_card2" data-shot="#_shot2"></li>
+                    <li class="dot js-dot" data-card="#_card3" data-shot="#_shot3"></li>
+                    <li class="dot js-dot" data-card="#_card4" data-shot="#_shot4"></li>
                 </ul>
             </div>
         </div>

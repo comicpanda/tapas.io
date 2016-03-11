@@ -34,7 +34,7 @@ p {
 }
 
 header {
-  background: rgba(38, 38, 54, 0.9) url('/public/images/bg-banner.png') no-repeat center center;
+  background: rgba(38, 38, 54, 0.9) url('/public/images/bg-banner.png') no-repeat;
   background-size: cover;
 }
 
@@ -347,7 +347,7 @@ footer {
   .info-wrap {
     height: 440px;
 
-    img {
+    .screen {
       display: none;
     }
 
@@ -458,7 +458,7 @@ footer {
   .info-wrap {
     height: 424px;
 
-    img {
+    .screen {
       display: block;
     }
 
@@ -573,7 +573,7 @@ footer {
   .info-wrap {
     height: 424px;
 
-    img {
+    .screen {
       display: block;
     }
 
@@ -688,7 +688,7 @@ footer {
   .info-wrap {
     height: 424px;
 
-    img {
+    .screen {
       display: block;
     }
 

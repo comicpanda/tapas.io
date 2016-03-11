@@ -47,6 +47,37 @@
     });
   });
 
+  var $dots = $('.dot-wrap').find('li'),
+    $cards = $('.info-card'),
+    $shots = $('.screen-shot').find('.screen-img');
+  $('.js-dot').on('click tap', function () {
+    var _self = $(this);
+    $dots.removeClass('active');
+    _self.addClass('active');
+
+    $cards.addClass('hidden')
+    $(_self.data('card')).removeClass('hidden');
+
+    var $prevShot = $shots.filter('.active');
+    var $nextShot = $(_self.data('shot'));
+    $prevShot.removeClass('active').addClass('hidden');
+    $nextShot.removeClass('hidden').addClass('active');
+  });
+
+  $('.js-info').on('swipeleft', function () {
+    var $activatedDot = $('.js-dot.active');
+    if ($activatedDot.next().length > 0) {
+      $activatedDot.next().click();
+    }
+  });
+
+  $('.js-info').on('swiperight', function () {
+    var $activatedDot = $('.js-dot.active');
+    if ($activatedDot.prev().length > 0) {
+      $activatedDot.prev().click();
+    }
+  });
+
   var stopEvent = function (e) {
     if (!e) {
       return;
@@ -74,4 +105,6 @@
       {scrollTop : scrollTop},
       { duration : duration, easing : 'easeInOutQuad'});
   };
+
+  var sendText = function () {};
 })();

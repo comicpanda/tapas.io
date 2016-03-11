@@ -54,10 +54,20 @@
     height: inherit;
   }
 
-  img {
+  .screen {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    .screen-shot {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+
+      .screen-img {
+        display: inline;
+      }
+    }
   }
 
   .info {
@@ -74,18 +84,20 @@
       margin: 0 auto;
     }
 
-    p {
-      color: $color-white;
-      font-size: 18px;
-      text-align: left;
+    .info-card {
+      p {
+        color: $color-white;
+        font-size: 18px;
+        text-align: left;
 
-      &:first-child {
-        font-size: 36px;
-        margin: 0 auto 32px auto;
-      }
+        &:first-child {
+          font-size: 36px;
+          margin: 0 auto 32px auto;
+        }
 
-      &:last-child {
-        margin-top: 32px;
+        &:last-child {
+          margin-top: 32px;
+        }
       }
     }
   }

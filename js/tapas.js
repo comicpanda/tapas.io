@@ -55,7 +55,7 @@
     $dots.removeClass('active');
     _self.addClass('active');
 
-    $cards.addClass('hidden')
+    $cards.addClass('hidden');
     $(_self.data('card')).removeClass('hidden');
 
     var $prevShot = $shots.filter('.active');

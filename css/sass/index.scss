@@ -1,9 +1,5 @@
-@import "tapas";
-
-
 .container {
   position: relative;
-
   .slogan {
     @include f-qsr;
     color: $color-white;

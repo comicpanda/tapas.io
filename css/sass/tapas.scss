@@ -1,5 +1,6 @@
+@import "variables";
 @import "mixins";
-@import "mixins-responsive";
+@import "sprites";
 
 html, body {
   @include f-qsr;
@@ -504,8 +505,6 @@ footer {
       }
     }
   }
-
-  @include share-mobile;
 }
 
 // Medium devices (tablets, 48em and up)
@@ -649,10 +648,6 @@ footer {
       }
     }
   }
-
-  @include share-web;
-  @include e-404;
-  @include e-500;
 }
 
 // Large devices (desktops, 62em and up)
@@ -796,10 +791,6 @@ footer {
       }
     }
   }
-
-  @include share-web;
-  @include e-404;
-  @include e-500;
 }
 
 // Extra large devices (large desktops, 75em and up)
@@ -937,8 +928,34 @@ footer {
       }
     }
   }
+}
 
-  @include share-web;
-  @include e-404;
-  @include e-500;
+//---  error pages
+.error-bg-404 {
+  img {
+    &:nth-child(2) {
+      margin-top: 10px;
+      margin-bottom: 13px;
+      width: inherit;
+    }
+
+    &:first-child {
+      display: block;
+      float: left;
+      margin-top: 32px;
+    }
+
+    &:last-child {
+      display: block;
+      float: right;
+      margin-top: 64px;
+    }
+  }
+}
+
+.error-bg-500 {
+  img {
+    width: inherit;
+    margin-top: 20px;
+  }
 }

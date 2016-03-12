@@ -43,3 +43,5 @@ node_modules/
 .sass-cache/*
 *.conf
 *.scssc
+node_modules/
+build/*

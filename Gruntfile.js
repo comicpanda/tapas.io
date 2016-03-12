@@ -1,20 +1,18 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-
     dirs: {
       css: 'css',
-      js: 'js/tapas'
+      js: 'js'
     },
 
     dests: {
+      css: 'public/css',
       js: 'public/js'
     },
 
-    bootstrapCss: '<%= dirs.css %>/bootstrap.min.css',
-
     jshint: {
-      files: ['Gruntfile.js', '<%= dirs.js %>/*.js'],
+      files: ['Gruntfile.js', '<%= dirs.js %>/tapas.js'],
       options: {
         globals: {
           jQuery: true
@@ -25,21 +23,22 @@ module.exports = function(grunt) {
     concat: {
       options: {},
       js: {
-        files: {}
+        src: ['js/jquery.min.js','js/jquery.mobile.min.js','js/bootstrap.min.js','build/tapas.min.js'],
+        dest: 'public/js/tapas.min.js'
       },
       css: {
-        files: {
-
-        }
+        src: ['css/bootstrap.min.css','build/style.css'],
+        dest: 'public/css/style.min.css'
       }
     },
 
-    compass: {
-      tapas: {
-        options : {
-          sassDir: '<%= dirs.css %>/sass',
-          cssDir: '<%= dirs.css %>',
-          outputStyle: 'compressed'
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          'build/style.css': 'css/sass/style.scss'
         }
       }
     },
@@ -49,22 +48,51 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'public/js/',
-        dest: 'public/js/'
+        files: {'build/tapas.min.js': ['js/tapas.js']}
       }
     },
 
+    sprite: {
+      all: {
+        src: 'images/sprite/*.png',
+        retinaSrcFilter: 'images/sprite/*-2x.png',
+        dest: 'public/images/sprites.png',
+        retinaDest : 'public/images/sprites-2x.png',
+        destCss: 'css/sass/sprites.scss',
+        imgPath: '/public/images/sprites.png',
+        retinaImgPath: '/public/images/sprites-2x.png',
+        cssSpritesheetName: 'sp',
+        padding : 2,
+        cssVarMap : function(sprite) {
+          sprite.name = 'sp-' + sprite.name;
+        }
+      }
+    },
+    clean: ['build/**', 'public/**'],
+
+    copy: {
+      main: {
+        expand: true,
+        src: 'images/*.png',
+        dest: 'public/'
+      }
+    },
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      sass : {
+        files: ['css/sass/*.scss'],
+        tasks: ['sass', 'concat:css']
+      },
+      livereload : {
+        options: {livereload: true},
+        files: ['public/css/style.min.css']
+      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-
-  grunt.registerTask('default', ['jshint', 'compass', 'concat', 'uglify']);
+  // These plugins provide necessary tasks.
+  for (var key in grunt.file.readJSON('package.json').devDependencies) {
+    if (key !== 'grunt' && key.indexOf('grunt') === 0) { grunt.loadNpmTasks(key); }
+  }
+  //processhtml
+  grunt.registerTask('default', ['clean','copy','jshint','uglify', 'concat:js', 'sprite', 'sass', 'concat:css']);
 };

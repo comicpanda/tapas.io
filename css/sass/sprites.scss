@@ -1,0 +1,583 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sp-bg-phoneframe-name: 'sp-bg-phoneframe';
+$sp-bg-phoneframe-x: 0px;
+$sp-bg-phoneframe-y: 0px;
+$sp-bg-phoneframe-offset-x: 0px;
+$sp-bg-phoneframe-offset-y: 0px;
+$sp-bg-phoneframe-width: 344px;
+$sp-bg-phoneframe-height: 512px;
+$sp-bg-phoneframe-total-width: 728px;
+$sp-bg-phoneframe-total-height: 512px;
+$sp-bg-phoneframe-image: '/public/images/sprites.png';
+$sp-bg-phoneframe: (0px, 0px, 0px, 0px, 344px, 512px, 728px, 512px, '/public/images/sprites.png', 'sp-bg-phoneframe', );
+$sp-bg-tapaspocket-name: 'sp-bg-tapaspocket';
+$sp-bg-tapaspocket-x: 656px;
+$sp-bg-tapaspocket-y: 271px;
+$sp-bg-tapaspocket-offset-x: -656px;
+$sp-bg-tapaspocket-offset-y: -271px;
+$sp-bg-tapaspocket-width: 62px;
+$sp-bg-tapaspocket-height: 68px;
+$sp-bg-tapaspocket-total-width: 728px;
+$sp-bg-tapaspocket-total-height: 512px;
+$sp-bg-tapaspocket-image: '/public/images/sprites.png';
+$sp-bg-tapaspocket: (656px, 271px, -656px, -271px, 62px, 68px, 728px, 512px, '/public/images/sprites.png', 'sp-bg-tapaspocket', );
+$sp-get-appstore-name: 'sp-get-appstore';
+$sp-get-appstore-x: 528px;
+$sp-get-appstore-y: 230px;
+$sp-get-appstore-offset-x: -528px;
+$sp-get-appstore-offset-y: -230px;
+$sp-get-appstore-width: 145px;
+$sp-get-appstore-height: 39px;
+$sp-get-appstore-total-width: 728px;
+$sp-get-appstore-total-height: 512px;
+$sp-get-appstore-image: '/public/images/sprites.png';
+$sp-get-appstore: (528px, 230px, -528px, -230px, 145px, 39px, 728px, 512px, '/public/images/sprites.png', 'sp-get-appstore', );
+$sp-get-googleplay-name: 'sp-get-googleplay';
+$sp-get-googleplay-x: 528px;
+$sp-get-googleplay-y: 184px;
+$sp-get-googleplay-offset-x: -528px;
+$sp-get-googleplay-offset-y: -184px;
+$sp-get-googleplay-width: 164px;
+$sp-get-googleplay-height: 44px;
+$sp-get-googleplay-total-width: 728px;
+$sp-get-googleplay-total-height: 512px;
+$sp-get-googleplay-image: '/public/images/sprites.png';
+$sp-get-googleplay: (528px, 184px, -528px, -184px, 164px, 44px, 728px, 512px, '/public/images/sprites.png', 'sp-get-googleplay', );
+$sp-ico-appstore-name: 'sp-ico-appstore';
+$sp-ico-appstore-x: 675px;
+$sp-ico-appstore-y: 230px;
+$sp-ico-appstore-offset-x: -675px;
+$sp-ico-appstore-offset-y: -230px;
+$sp-ico-appstore-width: 27px;
+$sp-ico-appstore-height: 32px;
+$sp-ico-appstore-total-width: 728px;
+$sp-ico-appstore-total-height: 512px;
+$sp-ico-appstore-image: '/public/images/sprites.png';
+$sp-ico-appstore: (675px, 230px, -675px, -230px, 27px, 32px, 728px, 512px, '/public/images/sprites.png', 'sp-ico-appstore', );
+$sp-ico-googleplay-name: 'sp-ico-googleplay';
+$sp-ico-googleplay-x: 694px;
+$sp-ico-googleplay-y: 184px;
+$sp-ico-googleplay-offset-x: -694px;
+$sp-ico-googleplay-offset-y: -184px;
+$sp-ico-googleplay-width: 31px;
+$sp-ico-googleplay-height: 34px;
+$sp-ico-googleplay-total-width: 728px;
+$sp-ico-googleplay-total-height: 512px;
+$sp-ico-googleplay-image: '/public/images/sprites.png';
+$sp-ico-googleplay: (694px, 184px, -694px, -184px, 31px, 34px, 728px, 512px, '/public/images/sprites.png', 'sp-ico-googleplay', );
+$sp-ico-tapas-name: 'sp-ico-tapas';
+$sp-ico-tapas-x: 582px;
+$sp-ico-tapas-y: 271px;
+$sp-ico-tapas-offset-x: -582px;
+$sp-ico-tapas-offset-y: -271px;
+$sp-ico-tapas-width: 72px;
+$sp-ico-tapas-height: 72px;
+$sp-ico-tapas-total-width: 728px;
+$sp-ico-tapas-total-height: 512px;
+$sp-ico-tapas-image: '/public/images/sprites.png';
+$sp-ico-tapas: (582px, 271px, -582px, -271px, 72px, 72px, 728px, 512px, '/public/images/sprites.png', 'sp-ico-tapas', );
+$sp-logo-tapas-name: 'sp-logo-tapas';
+$sp-logo-tapas-x: 528px;
+$sp-logo-tapas-y: 0px;
+$sp-logo-tapas-offset-x: -528px;
+$sp-logo-tapas-offset-y: 0px;
+$sp-logo-tapas-width: 200px;
+$sp-logo-tapas-height: 72px;
+$sp-logo-tapas-total-width: 728px;
+$sp-logo-tapas-total-height: 512px;
+$sp-logo-tapas-image: '/public/images/sprites.png';
+$sp-logo-tapas: (528px, 0px, -528px, 0px, 200px, 72px, 728px, 512px, '/public/images/sprites.png', 'sp-logo-tapas', );
+$sp-media-factsheet-name: 'sp-media-factsheet';
+$sp-media-factsheet-x: 638px;
+$sp-media-factsheet-y: 74px;
+$sp-media-factsheet-offset-x: -638px;
+$sp-media-factsheet-offset-y: -74px;
+$sp-media-factsheet-width: 80px;
+$sp-media-factsheet-height: 108px;
+$sp-media-factsheet-total-width: 728px;
+$sp-media-factsheet-total-height: 512px;
+$sp-media-factsheet-image: '/public/images/sprites.png';
+$sp-media-factsheet: (638px, 74px, -638px, -74px, 80px, 108px, 728px, 512px, '/public/images/sprites.png', 'sp-media-factsheet', );
+$sp-media-logoart-name: 'sp-media-logoart';
+$sp-media-logoart-x: 528px;
+$sp-media-logoart-y: 74px;
+$sp-media-logoart-offset-x: -528px;
+$sp-media-logoart-offset-y: -74px;
+$sp-media-logoart-width: 108px;
+$sp-media-logoart-height: 108px;
+$sp-media-logoart-total-width: 728px;
+$sp-media-logoart-total-height: 512px;
+$sp-media-logoart-image: '/public/images/sprites.png';
+$sp-media-logoart: (528px, 74px, -528px, -74px, 108px, 108px, 728px, 512px, '/public/images/sprites.png', 'sp-media-logoart', );
+$sp-media-screenshots-name: 'sp-media-screenshots';
+$sp-media-screenshots-x: 528px;
+$sp-media-screenshots-y: 271px;
+$sp-media-screenshots-offset-x: -528px;
+$sp-media-screenshots-offset-y: -271px;
+$sp-media-screenshots-width: 52px;
+$sp-media-screenshots-height: 108px;
+$sp-media-screenshots-total-width: 728px;
+$sp-media-screenshots-total-height: 512px;
+$sp-media-screenshots-image: '/public/images/sprites.png';
+$sp-media-screenshots: (528px, 271px, -528px, -271px, 52px, 108px, 728px, 512px, '/public/images/sprites.png', 'sp-media-screenshots', );
+$sp-social-fb-name: 'sp-social-fb';
+$sp-social-fb-x: 528px;
+$sp-social-fb-y: 381px;
+$sp-social-fb-offset-x: -528px;
+$sp-social-fb-offset-y: -381px;
+$sp-social-fb-width: 40px;
+$sp-social-fb-height: 40px;
+$sp-social-fb-total-width: 728px;
+$sp-social-fb-total-height: 512px;
+$sp-social-fb-image: '/public/images/sprites.png';
+$sp-social-fb: (528px, 381px, -528px, -381px, 40px, 40px, 728px, 512px, '/public/images/sprites.png', 'sp-social-fb', );
+$sp-social-ig-name: 'sp-social-ig';
+$sp-social-ig-x: 570px;
+$sp-social-ig-y: 381px;
+$sp-social-ig-offset-x: -570px;
+$sp-social-ig-offset-y: -381px;
+$sp-social-ig-width: 40px;
+$sp-social-ig-height: 40px;
+$sp-social-ig-total-width: 728px;
+$sp-social-ig-total-height: 512px;
+$sp-social-ig-image: '/public/images/sprites.png';
+$sp-social-ig: (570px, 381px, -570px, -381px, 40px, 40px, 728px, 512px, '/public/images/sprites.png', 'sp-social-ig', );
+$sp-social-md-name: 'sp-social-md';
+$sp-social-md-x: 612px;
+$sp-social-md-y: 381px;
+$sp-social-md-offset-x: -612px;
+$sp-social-md-offset-y: -381px;
+$sp-social-md-width: 40px;
+$sp-social-md-height: 40px;
+$sp-social-md-total-width: 728px;
+$sp-social-md-total-height: 512px;
+$sp-social-md-image: '/public/images/sprites.png';
+$sp-social-md: (612px, 381px, -612px, -381px, 40px, 40px, 728px, 512px, '/public/images/sprites.png', 'sp-social-md', );
+$sp-social-tb-name: 'sp-social-tb';
+$sp-social-tb-x: 654px;
+$sp-social-tb-y: 381px;
+$sp-social-tb-offset-x: -654px;
+$sp-social-tb-offset-y: -381px;
+$sp-social-tb-width: 40px;
+$sp-social-tb-height: 40px;
+$sp-social-tb-total-width: 728px;
+$sp-social-tb-total-height: 512px;
+$sp-social-tb-image: '/public/images/sprites.png';
+$sp-social-tb: (654px, 381px, -654px, -381px, 40px, 40px, 728px, 512px, '/public/images/sprites.png', 'sp-social-tb', );
+$sp-social-tw-name: 'sp-social-tw';
+$sp-social-tw-x: 528px;
+$sp-social-tw-y: 423px;
+$sp-social-tw-offset-x: -528px;
+$sp-social-tw-offset-y: -423px;
+$sp-social-tw-width: 40px;
+$sp-social-tw-height: 40px;
+$sp-social-tw-total-width: 728px;
+$sp-social-tw-total-height: 512px;
+$sp-social-tw-image: '/public/images/sprites.png';
+$sp-social-tw: (528px, 423px, -528px, -423px, 40px, 40px, 728px, 512px, '/public/images/sprites.png', 'sp-social-tw', );
+$sp-tapamon-ooh-name: 'sp-tapamon-ooh';
+$sp-tapamon-ooh-x: 346px;
+$sp-tapamon-ooh-y: 146px;
+$sp-tapamon-ooh-offset-x: -346px;
+$sp-tapamon-ooh-offset-y: -146px;
+$sp-tapamon-ooh-width: 175px;
+$sp-tapamon-ooh-height: 144px;
+$sp-tapamon-ooh-total-width: 728px;
+$sp-tapamon-ooh-total-height: 512px;
+$sp-tapamon-ooh-image: '/public/images/sprites.png';
+$sp-tapamon-ooh: (346px, 146px, -346px, -146px, 175px, 144px, 728px, 512px, '/public/images/sprites.png', 'sp-tapamon-ooh', );
+$sp-tapamon-taptap-name: 'sp-tapamon-taptap';
+$sp-tapamon-taptap-x: 346px;
+$sp-tapamon-taptap-y: 292px;
+$sp-tapamon-taptap-offset-x: -346px;
+$sp-tapamon-taptap-offset-y: -292px;
+$sp-tapamon-taptap-width: 167px;
+$sp-tapamon-taptap-height: 144px;
+$sp-tapamon-taptap-total-width: 728px;
+$sp-tapamon-taptap-total-height: 512px;
+$sp-tapamon-taptap-image: '/public/images/sprites.png';
+$sp-tapamon-taptap: (346px, 292px, -346px, -292px, 167px, 144px, 728px, 512px, '/public/images/sprites.png', 'sp-tapamon-taptap', );
+$sp-tapamon-yay-name: 'sp-tapamon-yay';
+$sp-tapamon-yay-x: 346px;
+$sp-tapamon-yay-y: 0px;
+$sp-tapamon-yay-offset-x: -346px;
+$sp-tapamon-yay-offset-y: 0px;
+$sp-tapamon-yay-width: 180px;
+$sp-tapamon-yay-height: 144px;
+$sp-tapamon-yay-total-width: 728px;
+$sp-tapamon-yay-total-height: 512px;
+$sp-tapamon-yay-image: '/public/images/sprites.png';
+$sp-tapamon-yay: (346px, 0px, -346px, 0px, 180px, 144px, 728px, 512px, '/public/images/sprites.png', 'sp-tapamon-yay', );
+$sp-bg-phoneframe-2x-name: 'sp-bg-phoneframe-2x';
+$sp-bg-phoneframe-2x-x: 0px;
+$sp-bg-phoneframe-2x-y: 0px;
+$sp-bg-phoneframe-2x-offset-x: 0px;
+$sp-bg-phoneframe-2x-offset-y: 0px;
+$sp-bg-phoneframe-2x-width: 688px;
+$sp-bg-phoneframe-2x-height: 1024px;
+$sp-bg-phoneframe-2x-total-width: 1456px;
+$sp-bg-phoneframe-2x-total-height: 1024px;
+$sp-bg-phoneframe-2x-image: '/public/images/sprites-2x.png';
+$sp-bg-phoneframe-2x: (0px, 0px, 0px, 0px, 688px, 1024px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-bg-phoneframe-2x', );
+$sp-bg-tapaspocket-2x-name: 'sp-bg-tapaspocket-2x';
+$sp-bg-tapaspocket-2x-x: 1312px;
+$sp-bg-tapaspocket-2x-y: 542px;
+$sp-bg-tapaspocket-2x-offset-x: -1312px;
+$sp-bg-tapaspocket-2x-offset-y: -542px;
+$sp-bg-tapaspocket-2x-width: 124px;
+$sp-bg-tapaspocket-2x-height: 136px;
+$sp-bg-tapaspocket-2x-total-width: 1456px;
+$sp-bg-tapaspocket-2x-total-height: 1024px;
+$sp-bg-tapaspocket-2x-image: '/public/images/sprites-2x.png';
+$sp-bg-tapaspocket-2x: (1312px, 542px, -1312px, -542px, 124px, 136px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-bg-tapaspocket-2x', );
+$sp-get-appstore-2x-name: 'sp-get-appstore-2x';
+$sp-get-appstore-2x-x: 1056px;
+$sp-get-appstore-2x-y: 460px;
+$sp-get-appstore-2x-offset-x: -1056px;
+$sp-get-appstore-2x-offset-y: -460px;
+$sp-get-appstore-2x-width: 290px;
+$sp-get-appstore-2x-height: 78px;
+$sp-get-appstore-2x-total-width: 1456px;
+$sp-get-appstore-2x-total-height: 1024px;
+$sp-get-appstore-2x-image: '/public/images/sprites-2x.png';
+$sp-get-appstore-2x: (1056px, 460px, -1056px, -460px, 290px, 78px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-get-appstore-2x', );
+$sp-get-googleplay-2x-name: 'sp-get-googleplay-2x';
+$sp-get-googleplay-2x-x: 1056px;
+$sp-get-googleplay-2x-y: 368px;
+$sp-get-googleplay-2x-offset-x: -1056px;
+$sp-get-googleplay-2x-offset-y: -368px;
+$sp-get-googleplay-2x-width: 328px;
+$sp-get-googleplay-2x-height: 88px;
+$sp-get-googleplay-2x-total-width: 1456px;
+$sp-get-googleplay-2x-total-height: 1024px;
+$sp-get-googleplay-2x-image: '/public/images/sprites-2x.png';
+$sp-get-googleplay-2x: (1056px, 368px, -1056px, -368px, 328px, 88px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-get-googleplay-2x', );
+$sp-ico-appstore-2x-name: 'sp-ico-appstore-2x';
+$sp-ico-appstore-2x-x: 1350px;
+$sp-ico-appstore-2x-y: 460px;
+$sp-ico-appstore-2x-offset-x: -1350px;
+$sp-ico-appstore-2x-offset-y: -460px;
+$sp-ico-appstore-2x-width: 54px;
+$sp-ico-appstore-2x-height: 64px;
+$sp-ico-appstore-2x-total-width: 1456px;
+$sp-ico-appstore-2x-total-height: 1024px;
+$sp-ico-appstore-2x-image: '/public/images/sprites-2x.png';
+$sp-ico-appstore-2x: (1350px, 460px, -1350px, -460px, 54px, 64px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-ico-appstore-2x', );
+$sp-ico-googleplay-2x-name: 'sp-ico-googleplay-2x';
+$sp-ico-googleplay-2x-x: 1388px;
+$sp-ico-googleplay-2x-y: 368px;
+$sp-ico-googleplay-2x-offset-x: -1388px;
+$sp-ico-googleplay-2x-offset-y: -368px;
+$sp-ico-googleplay-2x-width: 62px;
+$sp-ico-googleplay-2x-height: 68px;
+$sp-ico-googleplay-2x-total-width: 1456px;
+$sp-ico-googleplay-2x-total-height: 1024px;
+$sp-ico-googleplay-2x-image: '/public/images/sprites-2x.png';
+$sp-ico-googleplay-2x: (1388px, 368px, -1388px, -368px, 62px, 68px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-ico-googleplay-2x', );
+$sp-ico-tapas-2x-name: 'sp-ico-tapas-2x';
+$sp-ico-tapas-2x-x: 1164px;
+$sp-ico-tapas-2x-y: 542px;
+$sp-ico-tapas-2x-offset-x: -1164px;
+$sp-ico-tapas-2x-offset-y: -542px;
+$sp-ico-tapas-2x-width: 144px;
+$sp-ico-tapas-2x-height: 144px;
+$sp-ico-tapas-2x-total-width: 1456px;
+$sp-ico-tapas-2x-total-height: 1024px;
+$sp-ico-tapas-2x-image: '/public/images/sprites-2x.png';
+$sp-ico-tapas-2x: (1164px, 542px, -1164px, -542px, 144px, 144px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-ico-tapas-2x', );
+$sp-logo-tapas-2x-name: 'sp-logo-tapas-2x';
+$sp-logo-tapas-2x-x: 1056px;
+$sp-logo-tapas-2x-y: 0px;
+$sp-logo-tapas-2x-offset-x: -1056px;
+$sp-logo-tapas-2x-offset-y: 0px;
+$sp-logo-tapas-2x-width: 400px;
+$sp-logo-tapas-2x-height: 144px;
+$sp-logo-tapas-2x-total-width: 1456px;
+$sp-logo-tapas-2x-total-height: 1024px;
+$sp-logo-tapas-2x-image: '/public/images/sprites-2x.png';
+$sp-logo-tapas-2x: (1056px, 0px, -1056px, 0px, 400px, 144px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-logo-tapas-2x', );
+$sp-media-factsheet-2x-name: 'sp-media-factsheet-2x';
+$sp-media-factsheet-2x-x: 1276px;
+$sp-media-factsheet-2x-y: 148px;
+$sp-media-factsheet-2x-offset-x: -1276px;
+$sp-media-factsheet-2x-offset-y: -148px;
+$sp-media-factsheet-2x-width: 160px;
+$sp-media-factsheet-2x-height: 216px;
+$sp-media-factsheet-2x-total-width: 1456px;
+$sp-media-factsheet-2x-total-height: 1024px;
+$sp-media-factsheet-2x-image: '/public/images/sprites-2x.png';
+$sp-media-factsheet-2x: (1276px, 148px, -1276px, -148px, 160px, 216px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-media-factsheet-2x', );
+$sp-media-logoart-2x-name: 'sp-media-logoart-2x';
+$sp-media-logoart-2x-x: 1056px;
+$sp-media-logoart-2x-y: 148px;
+$sp-media-logoart-2x-offset-x: -1056px;
+$sp-media-logoart-2x-offset-y: -148px;
+$sp-media-logoart-2x-width: 216px;
+$sp-media-logoart-2x-height: 216px;
+$sp-media-logoart-2x-total-width: 1456px;
+$sp-media-logoart-2x-total-height: 1024px;
+$sp-media-logoart-2x-image: '/public/images/sprites-2x.png';
+$sp-media-logoart-2x: (1056px, 148px, -1056px, -148px, 216px, 216px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-media-logoart-2x', );
+$sp-media-screenshots-2x-name: 'sp-media-screenshots-2x';
+$sp-media-screenshots-2x-x: 1056px;
+$sp-media-screenshots-2x-y: 542px;
+$sp-media-screenshots-2x-offset-x: -1056px;
+$sp-media-screenshots-2x-offset-y: -542px;
+$sp-media-screenshots-2x-width: 104px;
+$sp-media-screenshots-2x-height: 216px;
+$sp-media-screenshots-2x-total-width: 1456px;
+$sp-media-screenshots-2x-total-height: 1024px;
+$sp-media-screenshots-2x-image: '/public/images/sprites-2x.png';
+$sp-media-screenshots-2x: (1056px, 542px, -1056px, -542px, 104px, 216px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-media-screenshots-2x', );
+$sp-social-fb-2x-name: 'sp-social-fb-2x';
+$sp-social-fb-2x-x: 1056px;
+$sp-social-fb-2x-y: 762px;
+$sp-social-fb-2x-offset-x: -1056px;
+$sp-social-fb-2x-offset-y: -762px;
+$sp-social-fb-2x-width: 80px;
+$sp-social-fb-2x-height: 80px;
+$sp-social-fb-2x-total-width: 1456px;
+$sp-social-fb-2x-total-height: 1024px;
+$sp-social-fb-2x-image: '/public/images/sprites-2x.png';
+$sp-social-fb-2x: (1056px, 762px, -1056px, -762px, 80px, 80px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-social-fb-2x', );
+$sp-social-ig-2x-name: 'sp-social-ig-2x';
+$sp-social-ig-2x-x: 1140px;
+$sp-social-ig-2x-y: 762px;
+$sp-social-ig-2x-offset-x: -1140px;
+$sp-social-ig-2x-offset-y: -762px;
+$sp-social-ig-2x-width: 80px;
+$sp-social-ig-2x-height: 80px;
+$sp-social-ig-2x-total-width: 1456px;
+$sp-social-ig-2x-total-height: 1024px;
+$sp-social-ig-2x-image: '/public/images/sprites-2x.png';
+$sp-social-ig-2x: (1140px, 762px, -1140px, -762px, 80px, 80px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-social-ig-2x', );
+$sp-social-md-2x-name: 'sp-social-md-2x';
+$sp-social-md-2x-x: 1224px;
+$sp-social-md-2x-y: 762px;
+$sp-social-md-2x-offset-x: -1224px;
+$sp-social-md-2x-offset-y: -762px;
+$sp-social-md-2x-width: 80px;
+$sp-social-md-2x-height: 80px;
+$sp-social-md-2x-total-width: 1456px;
+$sp-social-md-2x-total-height: 1024px;
+$sp-social-md-2x-image: '/public/images/sprites-2x.png';
+$sp-social-md-2x: (1224px, 762px, -1224px, -762px, 80px, 80px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-social-md-2x', );
+$sp-social-tb-2x-name: 'sp-social-tb-2x';
+$sp-social-tb-2x-x: 1308px;
+$sp-social-tb-2x-y: 762px;
+$sp-social-tb-2x-offset-x: -1308px;
+$sp-social-tb-2x-offset-y: -762px;
+$sp-social-tb-2x-width: 80px;
+$sp-social-tb-2x-height: 80px;
+$sp-social-tb-2x-total-width: 1456px;
+$sp-social-tb-2x-total-height: 1024px;
+$sp-social-tb-2x-image: '/public/images/sprites-2x.png';
+$sp-social-tb-2x: (1308px, 762px, -1308px, -762px, 80px, 80px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-social-tb-2x', );
+$sp-social-tw-2x-name: 'sp-social-tw-2x';
+$sp-social-tw-2x-x: 1056px;
+$sp-social-tw-2x-y: 846px;
+$sp-social-tw-2x-offset-x: -1056px;
+$sp-social-tw-2x-offset-y: -846px;
+$sp-social-tw-2x-width: 80px;
+$sp-social-tw-2x-height: 80px;
+$sp-social-tw-2x-total-width: 1456px;
+$sp-social-tw-2x-total-height: 1024px;
+$sp-social-tw-2x-image: '/public/images/sprites-2x.png';
+$sp-social-tw-2x: (1056px, 846px, -1056px, -846px, 80px, 80px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-social-tw-2x', );
+$sp-tapamon-ooh-2x-name: 'sp-tapamon-ooh-2x';
+$sp-tapamon-ooh-2x-x: 692px;
+$sp-tapamon-ooh-2x-y: 292px;
+$sp-tapamon-ooh-2x-offset-x: -692px;
+$sp-tapamon-ooh-2x-offset-y: -292px;
+$sp-tapamon-ooh-2x-width: 350px;
+$sp-tapamon-ooh-2x-height: 288px;
+$sp-tapamon-ooh-2x-total-width: 1456px;
+$sp-tapamon-ooh-2x-total-height: 1024px;
+$sp-tapamon-ooh-2x-image: '/public/images/sprites-2x.png';
+$sp-tapamon-ooh-2x: (692px, 292px, -692px, -292px, 350px, 288px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-tapamon-ooh-2x', );
+$sp-tapamon-taptap-2x-name: 'sp-tapamon-taptap-2x';
+$sp-tapamon-taptap-2x-x: 692px;
+$sp-tapamon-taptap-2x-y: 584px;
+$sp-tapamon-taptap-2x-offset-x: -692px;
+$sp-tapamon-taptap-2x-offset-y: -584px;
+$sp-tapamon-taptap-2x-width: 334px;
+$sp-tapamon-taptap-2x-height: 288px;
+$sp-tapamon-taptap-2x-total-width: 1456px;
+$sp-tapamon-taptap-2x-total-height: 1024px;
+$sp-tapamon-taptap-2x-image: '/public/images/sprites-2x.png';
+$sp-tapamon-taptap-2x: (692px, 584px, -692px, -584px, 334px, 288px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-tapamon-taptap-2x', );
+$sp-tapamon-yay-2x-name: 'sp-tapamon-yay-2x';
+$sp-tapamon-yay-2x-x: 692px;
+$sp-tapamon-yay-2x-y: 0px;
+$sp-tapamon-yay-2x-offset-x: -692px;
+$sp-tapamon-yay-2x-offset-y: 0px;
+$sp-tapamon-yay-2x-width: 360px;
+$sp-tapamon-yay-2x-height: 288px;
+$sp-tapamon-yay-2x-total-width: 1456px;
+$sp-tapamon-yay-2x-total-height: 1024px;
+$sp-tapamon-yay-2x-image: '/public/images/sprites-2x.png';
+$sp-tapamon-yay-2x: (692px, 0px, -692px, 0px, 360px, 288px, 1456px, 1024px, '/public/images/sprites-2x.png', 'sp-tapamon-yay-2x', );
+$sp-width: 728px;
+$sp-height: 512px;
+$sp-image: '/public/images/sprites.png';
+$sp-sprites: ($sp-bg-phoneframe, $sp-bg-tapaspocket, $sp-get-appstore, $sp-get-googleplay, $sp-ico-appstore, $sp-ico-googleplay, $sp-ico-tapas, $sp-logo-tapas, $sp-media-factsheet, $sp-media-logoart, $sp-media-screenshots, $sp-social-fb, $sp-social-ig, $sp-social-md, $sp-social-tb, $sp-social-tw, $sp-tapamon-ooh, $sp-tapamon-taptap, $sp-tapamon-yay, );
+$sp: (728px, 512px, '/public/images/sprites.png', $sp-sprites, );
+$retina-spritesheet-width: 1456px;
+$retina-spritesheet-height: 1024px;
+$retina-spritesheet-image: '/public/images/sprites-2x.png';
+$retina-spritesheet-sprites: ($sp-bg-phoneframe-2x, $sp-bg-tapaspocket-2x, $sp-get-appstore-2x, $sp-get-googleplay-2x, $sp-ico-appstore-2x, $sp-ico-googleplay-2x, $sp-ico-tapas-2x, $sp-logo-tapas-2x, $sp-media-factsheet-2x, $sp-media-logoart-2x, $sp-media-screenshots-2x, $sp-social-fb-2x, $sp-social-ig-2x, $sp-social-md-2x, $sp-social-tb-2x, $sp-social-tw-2x, $sp-tapamon-ooh-2x, $sp-tapamon-taptap-2x, $sp-tapamon-yay-2x, );
+$retina-spritesheet: (1456px, 1024px, '/public/images/sprites-2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$sp-bg-phoneframe-group-name: 'sp-bg-phoneframe';
+$sp-bg-phoneframe-group: ('sp-bg-phoneframe', $sp-bg-phoneframe, $sp-bg-phoneframe-2x, );
+$sp-bg-tapaspocket-group-name: 'sp-bg-tapaspocket';
+$sp-bg-tapaspocket-group: ('sp-bg-tapaspocket', $sp-bg-tapaspocket, $sp-bg-tapaspocket-2x, );
+$sp-get-appstore-group-name: 'sp-get-appstore';
+$sp-get-appstore-group: ('sp-get-appstore', $sp-get-appstore, $sp-get-appstore-2x, );
+$sp-get-googleplay-group-name: 'sp-get-googleplay';
+$sp-get-googleplay-group: ('sp-get-googleplay', $sp-get-googleplay, $sp-get-googleplay-2x, );
+$sp-ico-appstore-group-name: 'sp-ico-appstore';
+$sp-ico-appstore-group: ('sp-ico-appstore', $sp-ico-appstore, $sp-ico-appstore-2x, );
+$sp-ico-googleplay-group-name: 'sp-ico-googleplay';
+$sp-ico-googleplay-group: ('sp-ico-googleplay', $sp-ico-googleplay, $sp-ico-googleplay-2x, );
+$sp-ico-tapas-group-name: 'sp-ico-tapas';
+$sp-ico-tapas-group: ('sp-ico-tapas', $sp-ico-tapas, $sp-ico-tapas-2x, );
+$sp-logo-tapas-group-name: 'sp-logo-tapas';
+$sp-logo-tapas-group: ('sp-logo-tapas', $sp-logo-tapas, $sp-logo-tapas-2x, );
+$sp-media-factsheet-group-name: 'sp-media-factsheet';
+$sp-media-factsheet-group: ('sp-media-factsheet', $sp-media-factsheet, $sp-media-factsheet-2x, );
+$sp-media-logoart-group-name: 'sp-media-logoart';
+$sp-media-logoart-group: ('sp-media-logoart', $sp-media-logoart, $sp-media-logoart-2x, );
+$sp-media-screenshots-group-name: 'sp-media-screenshots';
+$sp-media-screenshots-group: ('sp-media-screenshots', $sp-media-screenshots, $sp-media-screenshots-2x, );
+$sp-social-fb-group-name: 'sp-social-fb';
+$sp-social-fb-group: ('sp-social-fb', $sp-social-fb, $sp-social-fb-2x, );
+$sp-social-ig-group-name: 'sp-social-ig';
+$sp-social-ig-group: ('sp-social-ig', $sp-social-ig, $sp-social-ig-2x, );
+$sp-social-md-group-name: 'sp-social-md';
+$sp-social-md-group: ('sp-social-md', $sp-social-md, $sp-social-md-2x, );
+$sp-social-tb-group-name: 'sp-social-tb';
+$sp-social-tb-group: ('sp-social-tb', $sp-social-tb, $sp-social-tb-2x, );
+$sp-social-tw-group-name: 'sp-social-tw';
+$sp-social-tw-group: ('sp-social-tw', $sp-social-tw, $sp-social-tw-2x, );
+$sp-tapamon-ooh-group-name: 'sp-tapamon-ooh';
+$sp-tapamon-ooh-group: ('sp-tapamon-ooh', $sp-tapamon-ooh, $sp-tapamon-ooh-2x, );
+$sp-tapamon-taptap-group-name: 'sp-tapamon-taptap';
+$sp-tapamon-taptap-group: ('sp-tapamon-taptap', $sp-tapamon-taptap, $sp-tapamon-taptap-2x, );
+$sp-tapamon-yay-group-name: 'sp-tapamon-yay';
+$sp-tapamon-yay-group: ('sp-tapamon-yay', $sp-tapamon-yay, $sp-tapamon-yay-2x, );
+$retina-groups: ($sp-bg-phoneframe-group, $sp-bg-tapaspocket-group, $sp-get-appstore-group, $sp-get-googleplay-group, $sp-ico-appstore-group, $sp-ico-googleplay-group, $sp-ico-tapas-group, $sp-logo-tapas-group, $sp-media-factsheet-group, $sp-media-logoart-group, $sp-media-screenshots-group, $sp-social-fb-group, $sp-social-ig-group, $sp-social-md-group, $sp-social-tb-group, $sp-social-tw-group, $sp-tapamon-ooh-group, $sp-tapamon-taptap-group, $sp-tapamon-yay-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

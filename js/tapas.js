@@ -7,7 +7,7 @@
   } else if (/Android/.test(ua)) {
     $('.app-store-btn.apple').addClass('hidden');
   } else {
-    $('.app-store-msg').removeClass('hidden');
+    $('.text-me-wrap').removeClass('hidden');
   }
 
   $('.js-line').each(function () {

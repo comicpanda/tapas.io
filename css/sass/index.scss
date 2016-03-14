@@ -35,18 +35,56 @@
       }
     }
 
-    .app-store-msg {
+    .text-me-wrap {
       text-align: center;
+      width: 380px;
       margin-top: 24px;
+      margin-bottom: 24px;
+      input {
+        color: $color-black;
+        width: 220px;
+        font-weight: 700;
+        &::-webkit-input-placeholder {
+          font-weight: 700;
+          opacity: 0.4;
+        }
+
+        &:-moz-placeholder {
+          font-weight: 700;
+          opacity: 0.4;
+        }
+
+        &::-moz-placeholder {
+          font-weight: 700;
+          opacity: 0.4;
+        }
+
+        &:-ms-input-placeholder {
+          font-weight: 700;
+          opacity: 0.4;
+        }
+      }
 
       a {
+        width: 160px;
         @include f-qsb;
         color: $color-white;
         font-size: 16px;
         text-decoration: none;
+        background-color: $color-d-text-me;
+        border: 0 none;
+        cursor: default;
+        &.active {
+          cursor: pointer;
+          background-color: $color-a-text-me;
+        }
       }
     }
   }
+}
+
+.text-me-wrap {
+
 }
 
 .info-wrap {

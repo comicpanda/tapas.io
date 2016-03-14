@@ -44,6 +44,7 @@ header {
     background: rgba(38, 38, 54, 0.9) url('/public/images/bg-banner.png') no-repeat;
     background-size: cover;
     height: 100%;
+    padding-bottom: 88px;
   }
 }
 
@@ -401,8 +402,6 @@ footer {
 
   .index {
     header.fixed {
-      height: 528px;
-
       .slogan {
         font-size: 20px;
       }
@@ -522,6 +521,10 @@ footer {
   .answer p {
     font-size: 16px;
   }
+
+  .text-me-wrap {
+    margin-left: -50px;
+  }
 }
 
 // Medium devices (tablets, 48em and up)
@@ -544,8 +547,6 @@ footer {
 
   .index {
     header.fixed {
-      height: 600px;
-
       .slogan {
         font-size: 24px;
       }
@@ -666,6 +667,9 @@ footer {
       }
     }
   }
+  .text-me-wrap {
+    margin: 24px auto;
+  }
 }
 
 // Large devices (desktops, 62em and up)
@@ -688,8 +692,6 @@ footer {
 
   .index {
     header.fixed {
-      height: 600px;
-
       .slogan {
         font-size: 24px;
       }
@@ -810,6 +812,9 @@ footer {
       }
     }
   }
+  .text-me-wrap {
+    margin: 24px auto;
+  }
 }
 
 // Extra large devices (large desktops, 75em and up)
@@ -832,8 +837,6 @@ footer {
 
   .index {
     header.fixed {
-      height: 600px;
-
       .slogan {
         font-size: 24px;
       }
@@ -947,6 +950,9 @@ footer {
         margin-left: 5px;
       }
     }
+  }
+  .text-me-wrap {
+    margin: 24px auto;
   }
 }
 

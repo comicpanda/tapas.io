@@ -260,7 +260,7 @@ footer {
     i {
       display: block;
       margin: 0 auto;
-      
+
       &:first-child {
         margin-bottom: 24px;
       }
@@ -504,6 +504,9 @@ footer {
         margin-top: 20px;
       }
     }
+  }
+  .answer p {
+    font-size: 16px;
   }
 }
 

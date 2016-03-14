@@ -23,7 +23,12 @@ module.exports = function(grunt) {
     concat: {
       options: {},
       js: {
-        src: ['js/jquery.min.js','js/jquery.mobile.min.js','js/tether.min.js','js/bootstrap.min.js','build/tapas.min.js'],
+        src: ['js/jquery.min.js',
+        'js/jquery.mobile.min.js',
+        'js/jquery-effect.min.js',
+        'js/tether.min.js',
+        'js/bootstrap.min.js',
+        'build/tapas.min.js'],
         dest: 'public/js/tapas.min.js'
       },
       css: {

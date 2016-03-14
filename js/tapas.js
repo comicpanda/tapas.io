@@ -49,21 +49,39 @@
 
   var $dots = $('.dot-wrap').find('li'),
     $cards = $('.info-card'),
-    $shots = $('.screen-shot').find('.screen-img');
-  $('.js-dot').on('click tap', function () {
-    var _self = $(this);
-    $dots.removeClass('active');
-    _self.addClass('active');
+    $shots = $('.screen-shot').find('.screen-img'),
+    dotLen = $dots.length,
+    currentIdx = 0,
+    timerId;
 
-    $cards.addClass('hidden');
-    $(_self.data('card')).removeClass('hidden');
+  var timer = function() {
+    timerId = setTimeout(function() {
+      var nextIdx = currentIdx + 1;
+      chageCard($dots.eq(nextIdx === dotLen ? 0 : nextIdx));
+    }, 3000);
+  };
+  timer();
+  var chageCard = function(self) {
+      clearTimeout(timerId);
+      var _self = $(self);
+      $dots.removeClass('active');
+      _self.addClass('active');
+      $cards.addClass('hide');
+      $(_self.data('card')).removeClass('hide');
 
-    var $prevShot = $shots.filter('.active');
-    var $nextShot = $(_self.data('shot'));
-    $prevShot.removeClass('active').addClass('hidden');
-    $nextShot.removeClass('hidden').addClass('active');
+      var $prevShot = $shots.filter('.active');
+      var $nextShot = $(_self.data('shot'));
+      $prevShot.removeClass('active').addClass('hide');
+      $nextShot.removeClass('hide').addClass('active');
+      currentIdx++;
+      if(currentIdx === dotLen) {
+        currentIdx = 0;
+      }
+      timer();
+  };
+  $('.js-dot').on('click tap', function() {
+    chageCard(this);
   });
-
   $('.js-info').on('swipeleft', function () {
     var $activatedDot = $('.js-dot.active');
     if ($activatedDot.next().length > 0) {

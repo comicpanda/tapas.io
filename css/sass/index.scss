@@ -61,11 +61,19 @@
 
     .screen-shot {
       position: absolute;
-      bottom: 0;
+      top: 72px;
       left: 20px;
 
       .screen-img {
-        display: inline;
+        position: absolute;
+        top: 0;
+        display: inline-block !important;
+        opacity: 0;
+        transition: opacity 0.5s;
+        &.active {
+          transition: opacity 1s;
+          opacity: 1;
+        }
       }
     }
   }
@@ -85,6 +93,16 @@
     }
 
     .info-card {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      display: inline-block;
+      opacity: 1;
+      transition: opacity 1s;
+      &.hide {
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
       p {
         color: $color-white;
         font-size: 18px;

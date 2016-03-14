@@ -255,13 +255,13 @@ footer {
     overflow: auto;
     float: none;
     margin-top: 0;
+    padding-top: 80px;
 
-    img {
+    i {
       display: block;
       margin: 0 auto;
-
+      
       &:first-child {
-        padding-top: 80px;
         margin-bottom: 24px;
       }
     }
@@ -929,6 +929,14 @@ footer {
     }
   }
 }
+
+//--- sprites
+.ib {
+    display: inline-block;
+    vertical-align: middle;
+}
+@include sprites($sp-sprites);
+@include retina-sprites($retina-groups);
 
 //---  error pages
 .error-bg-404 {

@@ -1,5 +1,6 @@
 .container {
   position: relative;
+
   .slogan {
     @include f-qsr;
     color: $color-white;
@@ -23,13 +24,13 @@
       vertical-align: middle;
       @include border-radius();
 
-      img {
-        padding: 10px 0;
+      i {
+        margin-top: 10px;
       }
 
       &:last-child {
-        img {
-          padding: 8px 0;
+        i {
+          margin-top: 8px;
         }
       }
     }

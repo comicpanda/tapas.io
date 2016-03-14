@@ -1,16 +1,11 @@
-@mixin font() {
-  font-weight: normal !important;
+@mixin font($weight: 400) {
+  font-weight: $weight;
   font-style: normal !important;
 }
 
 @mixin f-qsb() {
-  font-family: $qsb-font-stack;
-  @include font;
-}
-
-@mixin f-qsl() {
-  font-family: $qsl-font-stack;
-  @include font;
+  font-family: $qsr-font-stack;
+  @include font(700);
 }
 
 @mixin f-qsr() {

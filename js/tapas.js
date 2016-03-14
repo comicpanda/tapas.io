@@ -6,6 +6,8 @@
     $('.app-store-btn.google').addClass('hidden');
   } else if (/Android/.test(ua)) {
     $('.app-store-btn.apple').addClass('hidden');
+  } else {
+    $('.app-store-msg').removeClass('hidden');
   }
 
   $('.js-line').each(function () {

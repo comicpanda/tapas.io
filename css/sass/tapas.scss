@@ -10,6 +10,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: $color-yellow;
+}
+
 img {
   @include rm-lh;
 }
@@ -35,8 +39,12 @@ p {
 }
 
 header {
-  background: rgba(38, 38, 54, 0.9) url('/public/images/bg-banner.png') no-repeat;
-  background-size: cover;
+  background-color: white;
+  .inner {
+    background: rgba(38, 38, 54, 0.9) url('/public/images/bg-banner.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
 }
 
 footer {
@@ -57,14 +65,19 @@ footer {
   }
 }
 
+.page-content {
+  flex: 1;
+}
+
 .content {
+  background-color: white;
   &.inverse {
     background-color: $color-black;
   }
 }
 
 .section {
-  margin: 60px 0;
+  padding: 60px 0;
 
   .title {
     font-size: 36px;
@@ -449,8 +462,9 @@ footer {
   }
 
   .guide-wrap {
+    padding-top: 60px !important;
     p {
-      margin: 60px auto 40px auto;
+      margin: 0 auto 40px auto;
     }
 
     ul {
@@ -591,8 +605,9 @@ footer {
   }
 
   .guide-wrap {
+    padding-top: 60px !important;
     p {
-      margin: 60px auto 32px auto;
+      margin: 0 auto 32px auto;
     }
 
     ul {
@@ -734,8 +749,9 @@ footer {
   }
 
   .guide-wrap {
+    padding-top: 60px !important;
     p {
-      margin: 60px auto 32px auto;
+      margin: 0 auto 32px auto;
     }
 
     ul {
@@ -871,8 +887,9 @@ footer {
   }
 
   .guide-wrap {
+    padding-top: 60px !important;
     p {
-      margin: 60px auto 32px auto;
+      margin: 0 auto 32px auto;
     }
 
     ul {

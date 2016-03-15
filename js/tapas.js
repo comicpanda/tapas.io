@@ -102,7 +102,7 @@
     timerId = setTimeout(function() {
       var nextIdx = currentIdx + 1;
       chageCard($dots.eq(nextIdx === dotLen ? 0 : nextIdx));
-    }, 3000);
+    }, 5000);
   };
   timer();
   var chageCard = function(self) {

@@ -46,6 +46,20 @@ var sendSMS = function (to, cb) {
       cb(!!err);
     });
 }
+process.on('message', function (message) {
+  if (message === 'shutdown') {
+    performCleanup();
+    process.exit(0);
+  }
+});
+
+process.on('uncaughtException', function (err) {
+  console.error(err);
+});
+
 server.listen(PORT, function(){
+    if (process.send) {
+      process.send('online');
+    }
     console.log("Server listening on: http://localhost:%s", PORT);
 });

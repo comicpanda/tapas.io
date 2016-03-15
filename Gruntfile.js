@@ -78,7 +78,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         expand: true,
-        src: 'images/*.png',
+        src: ['images/*.png','images/*.ico'],
         dest: 'public/'
       }
     },

@@ -12,10 +12,6 @@ html, body {
 
 body {
   background-color: $color-yellow;
-
-  &.clear {
-    background-color: $color-white;
-  }
 }
 
 img {
@@ -107,33 +103,6 @@ footer {
 .error-bg-500 {
   background: url('/public/images/500-bgstripes.png');
   text-align: center;
-}
-
-.update-bg {
-  background: url('/public/images/serverdown-bgstripes.png');
-  text-align: center;
-
-  i {
-    margin: 92px auto 28px auto;
-  }
-}
-
-.upgrade-bg + .container {
-  margin-top: 44px;
-}
-
-.upgrade-bg {
-  background: url('/public/images/serverupgrade-bgstripes.png');
-  text-align: center;
-  position: relative;
-  min-height: 320px;
-
-  i {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    margin: 0 auto;
-  }
 }
 
 .error {

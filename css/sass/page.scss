@@ -124,6 +124,106 @@ ul.line {
   }
 }
 
+ul.team {
+
+  .member {
+    width: 200px;
+    text-align: center;
+    vertical-align: top;
+
+    i {
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .desc {
+      p:first-child {
+        color: $color-black;
+        font-size: 22px;
+        margin-top: 12px;
+      }
+
+      p:last-child {
+        min-height: 34px;
+        color: $color-yellow;
+        font-size: 16px;
+        margin-top: 4px;
+        line-height: 1.1;
+
+        &.open {
+          padding: 0 9px;
+        }
+      }
+    }
+  }
+}
+
+ul.resources {
+  .item-wrap {
+    width: 192px;
+    height: 198px;
+    padding: 24px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      @include border-radius(5px);
+    }
+
+    .item {
+      width: 144px;
+      height: 150px;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      i {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    p {
+      @include f-qsb;
+      font-size: 22px;
+      margin: 9px 0 0 0;
+    }
+  }
+}
+
+ul.news {
+  .story {
+    width: 304px;
+    height: 180px;
+    border: 1px solid $color-e9;
+    @include border-radius(3px);
+    padding: 24px 36px;
+
+    a {
+      height: 80px;
+      display: block;
+      @include f-qsb;
+      font-size: 30px;
+      color: $color-white;
+      background-color: $color-d8;
+      text-align: center;
+      text-decoration: none;
+      span {
+        line-height: 80px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: $color-d-gray;
+      margin: 8px 0 0 0;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+}
 
 .bullet {
   width: 12px;

@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "sprites";
+@import "sprites-team";
 
 html, body {
   @include f-qsr;

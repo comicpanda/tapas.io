@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
-@import "sprites";
 @import "sprites-team";
+@import "sprites";
 
 html, body {
   @include f-qsr;
@@ -76,6 +76,7 @@ footer {
   background-color: white;
   &.inverse {
     background-color: $color-black;
+    color: $color-white;
   }
 }
 
@@ -144,6 +145,10 @@ footer {
     &:last-child {
       margin: 32px auto 60px auto;
     }
+  }
+
+  &.about-page {
+    margin-bottom: 32px;
   }
 }
 
@@ -239,6 +244,7 @@ footer {
       display: block;
       padding: 12px 20px;
       background-color: $color-black;
+      min-width: 280px;
 
       &:last-child {
         @include border-radius-bottom;
@@ -527,6 +533,40 @@ footer {
   .text-me-wrap {
     margin-left: -50px;
   }
+
+  .team {
+    .member {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+
+    .member:nth-child(3n) {
+      margin-right: auto;
+    }
+
+    .member:nth-child(4n) {
+      margin-right: auto;
+    }
+
+    .member:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .resources {
+    .item-wrap {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .item-wrap:last-child {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 // Medium devices (tablets, 48em and up)
@@ -669,8 +709,44 @@ footer {
       }
     }
   }
+
   .text-me-wrap {
     margin: 24px auto;
+  }
+
+  .team {
+    .member {
+      display: inline-block;
+      margin-right: 24px;
+      margin-bottom: 40px;
+    }
+
+    .member:nth-child(4n) {
+      margin-right: 24px;
+    }
+
+    .member:nth-child(3n) {
+      margin-right: 0px;
+    }
+
+    .member:nth-child(n+8) {
+      margin-bottom: 40px;
+    }
+
+    .member:nth-child(n+9) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .resources {
+    .item-wrap {
+      display: inline-block;
+      margin-left: 36px;
+    }
+
+    .item-wrap:last-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -814,8 +890,40 @@ footer {
       }
     }
   }
+
   .text-me-wrap {
     margin: 24px auto;
+  }
+
+  .team {
+    .member {
+      display: inline-block;
+      margin-right: 40px;
+      margin-bottom: 40px;
+    }
+
+    .member:nth-child(3n) {
+      margin-right: 40px;
+    }
+
+    .member:nth-child(4n) {
+      margin-right: 0px;
+    }
+
+    .member:nth-child(n+8) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .resources {
+    .item-wrap {
+      display: inline-block;
+      margin-left: 36px;
+    }
+
+    .item-wrap:last-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -953,8 +1061,40 @@ footer {
       }
     }
   }
+
   .text-me-wrap {
     margin: 24px auto;
+  }
+
+  .team {
+    .member {
+      display: inline-block;
+      margin-right: 40px;
+      margin-bottom: 40px;
+    }
+
+    .member:nth-child(3n) {
+      margin-right: 40px;
+    }
+
+    .member:nth-child(4n) {
+      margin-right: 0px;
+    }
+
+    .member:nth-child(n+8) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .resources {
+    .item-wrap {
+      display: inline-block;
+      margin-left: 36px;
+    }
+
+    .item-wrap:last-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -963,8 +1103,13 @@ footer {
     display: inline-block;
     vertical-align: middle;
 }
-@include sprites($sp-sprites);
-@include retina-sprites($retina-groups);
+
+body {
+  @include sprites($sp-sprites);
+  @include retina-sprites($sp-retina-groups);
+  @include sprite($sp-team-sprites);
+  @include retina-sprites($sp-team-retina-groups);
+}
 
 //---  error pages
 .error-bg-404 {

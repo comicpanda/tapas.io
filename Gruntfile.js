@@ -58,7 +58,7 @@ module.exports = function(grunt) {
     },
 
     sprite: {
-      all: {
+      asset: {
         src: 'images/sprite/*.png',
         retinaSrcFilter: 'images/sprite/*-2x.png',
         dest: 'public/images/sprites.png',
@@ -67,10 +67,13 @@ module.exports = function(grunt) {
         imgPath: '/public/images/sprites.png',
         retinaImgPath: '/public/images/sprites-2x.png',
         cssSpritesheetName: 'sp',
+        cssRetinaGroupsName: 'sp-retina-groups',
+        cssRetinaSpritesheetName: 'sp-retina',
         padding : 2,
         cssVarMap : function(sprite) {
           sprite.name = 'sp-' + sprite.name;
-        }
+        },
+        cssOpts: {functions: false}
       },
 
       team: {
@@ -81,12 +84,15 @@ module.exports = function(grunt) {
         destCss: 'css/sass/sprites-team.scss',
         imgPath: '/public/images/sprites-team.png',
         retinaImgPath: '/public/images/sprites-team-2x.png',
-        cssSpritesheetName: 'sp',
+        cssSpritesheetName: 'sp-team',
+        cssRetinaGroupsName: 'sp-team-retina-groups',
+        cssRetinaSpritesheetName: 'sp-team-retina',
         padding : 2,
         cssVarMap : function(sprite) {
-        sprite.name = 'sp-' + sprite.name;
-    }
-  }
+          sprite.name = 'sp-team-' + sprite.name;
+        },
+        cssOpts: {functions: false}
+      },
     },
 
     clean: ['build/**', 'public/**'],
@@ -98,6 +104,7 @@ module.exports = function(grunt) {
         dest: 'public/'
       }
     },
+    
     watch: {
       sass : {
         files: ['css/sass/*.scss', 'js/tapas.js'],

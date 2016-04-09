@@ -174,4 +174,17 @@
   };
 
   var sendText = function () {};
+
+  $('.js-team-img').on('mouseenter mouseleave', function () {
+    var _self = $(this),
+      $img = _self.find('i'),
+      overImg = $img.data('alter'),
+      originalImg = $img.attr('class'),
+      $desc = _self.next().find('p:last-child'),
+      specialTxt = $desc.data('special'),
+      title = $desc.text();
+
+    $img.removeClass().addClass(overImg).data('alter', originalImg);
+    $desc.text(specialTxt).data('special', title).toggleClass('open', !$desc.hasClass('open'));
+  });
 })();

@@ -1104,12 +1104,10 @@ footer {
     vertical-align: middle;
 }
 
-body {
-  @include sprites($sp-sprites);
-  @include retina-sprites($sp-retina-groups);
-  @include sprite($sp-team-sprites);
-  @include retina-sprites($sp-team-retina-groups);
-}
+@include sprites($sp-sprites);
+@include retina-sprites($sp-retina-groups);
+@include sprites($sp-team-sprites);
+@include retina-sprites($sp-team-retina-groups);
 
 //---  error pages
 .error-bg-404 {

@@ -195,23 +195,22 @@ ul.resources {
 
 ul.news {
   .story {
-    width: 304px;
-    height: 180px;
-    border: 1px solid $color-e9;
-    @include border-radius(3px);
-    padding: 24px 36px;
+    margin-bottom: 40px;
+    cursor: pointer;
 
     a {
-      height: 80px;
+      height: 120px;
+      margin-bottom: 12px;
       display: block;
-      @include f-qsb;
-      font-size: 30px;
-      color: $color-white;
-      background-color: $color-d8;
       text-align: center;
       text-decoration: none;
       span {
-        line-height: 80px;
+        display: block;
+        @include f-qsb;
+        font-size: 30px;
+        color: $color-white;
+        background-color: $color-d8;
+        line-height: 120px;
       }
     }
 
@@ -219,7 +218,7 @@ ul.news {
       font-size: 18px;
       color: $color-d-gray;
       margin: 8px 0 0 0;
-      line-height: 1.2;
+      line-height: 24px;
       text-align: center;
     }
   }

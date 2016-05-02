@@ -139,7 +139,16 @@
       $activatedDot.prev().click();
     }
   });
-
+  
+  $('.js-story').each(function () {
+    var _self = $(this),
+      link = _self.find('a').attr('href'),
+      $desc = _self.find('p');
+    
+    $desc.on('click tap', function () {
+      window.open(link, '_blank');
+    });
+  });
   // TODO send SMS
   //$('.js-send-txt').on('click tap', function (e) {
   //  stopEvent(e);

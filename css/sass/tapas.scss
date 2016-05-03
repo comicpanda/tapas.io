@@ -567,6 +567,12 @@ footer {
       margin-right: auto;
     }
   }
+
+  .news {
+    .story {
+      width: 280px;
+    }
+  }
 }
 
 // Medium devices (tablets, 48em and up)
@@ -748,6 +754,21 @@ footer {
       margin-left: 0;
     }
   }
+
+  .news {
+    .story {
+      width: 280px;
+      margin-right: 0px;
+    }
+
+    .story:nth-child(3n) {
+      margin-right: 0px;
+    }
+
+    .story:nth-child(2n-1) {
+      margin-right: 44px;
+    }
+  }
 }
 
 // Large devices (desktops, 62em and up)
@@ -925,6 +946,21 @@ footer {
       margin-left: 0;
     }
   }
+
+  .news {
+    .story {
+      width: 280px;
+      margin-right: 40px;
+    }
+
+    .story:nth-child(2n-1) {
+      margin-right: 40px;
+    }
+
+    .story:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 75em and up)
@@ -1094,6 +1130,21 @@ footer {
 
     .item-wrap:last-child {
       margin-left: 0;
+    }
+  }
+
+  .news {
+    .story {
+      width: 280px;
+      margin-right: 40px;
+    }
+
+    .story:nth-child(2n-1) {
+      margin-right: 40px;
+    }
+
+    .story:nth-child(3n) {
+      margin-right: 0px;
     }
   }
 }

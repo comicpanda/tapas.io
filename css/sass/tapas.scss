@@ -573,6 +573,10 @@ footer {
       width: 280px;
     }
   }
+
+  .pagination-wrap {
+    display: none;
+  }
 }
 
 // Medium devices (tablets, 48em and up)
@@ -769,6 +773,10 @@ footer {
       margin-right: 44px;
     }
   }
+
+  .pagination-wrap {
+    display: block;
+  }
 }
 
 // Large devices (desktops, 62em and up)
@@ -961,6 +969,10 @@ footer {
       margin-right: 0px;
     }
   }
+
+  .pagination-wrap {
+    display: block;
+  }
 }
 
 // Extra large devices (large desktops, 75em and up)
@@ -1146,6 +1158,10 @@ footer {
     .story:nth-child(3n) {
       margin-right: 0px;
     }
+  }
+
+  .pagination-wrap {
+    display: block;
   }
 }
 

@@ -101,11 +101,11 @@
   var timer = function() {
     timerId = setTimeout(function() {
       var nextIdx = currentIdx + 1;
-      chageCard($dots.eq(nextIdx === dotLen ? 0 : nextIdx));
+      changeCard($dots.eq(nextIdx === dotLen ? 0 : nextIdx));
     }, 5000);
   };
   timer();
-  var chageCard = function(self) {
+  var changeCard = function(self) {
       clearTimeout(timerId);
       var _self = $(self);
       $dots.removeClass('active');
@@ -124,7 +124,7 @@
       timer();
   };
   $('.js-dot').on('click tap', function() {
-    chageCard(this);
+    changeCard(this);
   });
   $('.js-info').on('swipeleft', function () {
     var $activatedDot = $('.js-dot.active');
@@ -149,10 +149,68 @@
       window.open(link, '_blank');
     });
   });
-  // TODO send SMS
-  //$('.js-send-txt').on('click tap', function (e) {
-  //  stopEvent(e);
-  //});
+
+  // pagination
+  var paginationItemCnt = $('.js-page-dot').length;
+  var $prevBtn = $('.js-page-item.first');
+  var $nextBtn = $('.js-page-item.last');
+  var changeNews = function (idx) {
+    var nextPage = $('.js-news-item-' + idx);
+
+    $('.js-news').addClass('hidden').filter(nextPage).removeClass('hidden');
+  };
+
+  $('.js-page-dot').on('click tap', function (e) {
+    stopEvent(e);
+    var self = $(this),
+      idx = self.data('idx');
+
+    $('.js-page-dot').removeClass('active').filter('[data-idx='+idx+']').addClass('active');
+    if (idx === 0) {
+      $prevBtn.removeClass('active');
+      $nextBtn.addClass('active');
+    } else if (idx === paginationItemCnt - 1) {
+      $prevBtn.addClass('active');
+      $nextBtn.removeClass('active');
+    } else {
+      $prevBtn.addClass('active');
+      $nextBtn.addClass('active');
+    }
+
+    changeNews(idx);
+  });
+  $('.js-page-item').on('click tap', function (e) {
+    stopEvent(e);
+    var self = $(this),
+      $current = $('.js-page-dot.active'),
+      currentIdx = $current.data('idx'),
+      goPrev = self.hasClass('first');
+
+    if (goPrev) {
+      if (currentIdx === 0) {
+        return ;
+      }
+
+      var $prev = $current.prev(),
+        prevIdx = $prev.data('idx');
+
+      self.toggleClass('active', prevIdx !== 0);
+      $nextBtn.addClass('active');
+      $prev.click();
+    } else {
+      if (currentIdx === paginationItemCnt - 1) {
+        return ;
+      }
+
+      var $next = $current.next(),
+        nextIdx = $next.data('idx');
+
+      self.toggleClass('active', nextIdx !== paginationItemCnt - 1);
+      $prevBtn.addClass('active');
+      $next.click();
+    }
+
+  });
 
   var stopEvent = function (e) {
     if (!e) {
@@ -181,8 +239,6 @@
       {scrollTop : scrollTop},
       { duration : duration, easing : 'easeInOutQuad'});
   };
-
-  var sendText = function () {};
 
   $('.js-team-img').on('mouseenter mouseleave', function () {
     var _self = $(this),

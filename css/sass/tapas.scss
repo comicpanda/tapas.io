@@ -574,8 +574,22 @@ footer {
     }
   }
 
-  .pagination-wrap {
-    display: none;
+  .page-item {
+    .page-link {
+      width: 50px;
+    }
+
+    &.first {
+      .page-link:after {
+        content: '<';
+      }
+    }
+
+    &.last {
+      .page-link:after {
+        content: '>';
+      }
+    }
   }
 }
 
@@ -774,8 +788,22 @@ footer {
     }
   }
 
-  .pagination-wrap {
-    display: block;
+  .page-item {
+    .page-link {
+      width: 100px;
+    }
+
+    &.first {
+      .page-link:after {
+        content: 'Newer';
+      }
+    }
+
+    &.last {
+      .page-link:after {
+        content: 'Older';
+      }
+    }
   }
 }
 
@@ -970,8 +998,22 @@ footer {
     }
   }
 
-  .pagination-wrap {
-    display: block;
+  .page-item {
+    .page-link {
+      width: 100px;
+    }
+
+    &.first {
+      .page-link:after {
+        content: 'Newer';
+      }
+    }
+
+    &.last {
+      .page-link:after {
+        content: 'Older';
+      }
+    }
   }
 }
 
@@ -1160,8 +1202,22 @@ footer {
     }
   }
 
-  .pagination-wrap {
-    display: block;
+  .page-item {
+    .page-link {
+      width: 100px;
+    }
+
+    &.first {
+      .page-link:after {
+        content: 'Newer';
+      }
+    }
+
+    &.last {
+      .page-link:after {
+        content: 'Older';
+      }
+    }
   }
 }
 

@@ -253,7 +253,6 @@ ul.news {
   text-align: center;
 
   .page-item {
-
     .page-dot {
       display: block;
       width: 12px;
@@ -271,7 +270,6 @@ ul.news {
     }
 
     .page-link {
-      width: 100px;
       @include f-qsb;
       font-size: 20px;
       color: $color-white;

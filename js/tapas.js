@@ -12,46 +12,6 @@
     $('.text-me-wrap').removeClass('hidden');
   }
 
-  $('#text-me').on('input', function(e) {
-    var _self = $(this);
-    phoneNumber = _self.val().replace(/[^\d]/g,'').substring(0,10);
-    var match = /^(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$/.test(phoneNumber);
-
-    if (/^(\d{3})?(\d{1,4})?$/.test(phoneNumber)) {
-      _self.val(phoneNumber.replace(/^(\d{3})(\d{1,4})$/, '$1-$2'));
-    } else {
-      _self.val(phoneNumber.replace(/^(\d{3})(\d{3})(\d{1,4})?$/, '($1) $2-$3'));
-    }
-
-    _self.next().toggleClass('active', match);
-  });
-
-  $('a.text-me').on('click', function(e){
-    stopEvent(e);
-    var callback = function(data, textStatus, jqXHR) {
-      var msg = 'Text has been sent!',
-        isError = false;
-      if (!jqXHR.status) {
-        msg = 'Please check your number and try again (US only).';
-        isError = true;
-      }
-      $textMeCallbackMsg.text(msg).removeClass('hidden')
-        .toggleClass('error', isError)
-        .data('prevNumber', isError? '' : phoneNumber);
-
-      setTimeout(function() {
-        $textMeCallbackMsg.addClass('hidden');
-      }, 3000);
-    };
-    if($textMeCallbackMsg.data('prevNumber') !== phoneNumber) {
-      if($(this).hasClass('active')) {
-        $.post('/send-sms', { to: phoneNumber})
-          .done(callback)
-          .fail(callback);
-      }
-    }
-  });
-
   $('.js-line').each(function () {
     var _self = $(this),
       $question = _self.find('.question');
@@ -139,12 +99,12 @@
       $activatedDot.prev().click();
     }
   });
-  
+
   $('.js-story').each(function () {
     var _self = $(this),
       link = _self.find('a').attr('href'),
       $desc = _self.find('p');
-    
+
     $desc.on('click tap', function () {
       window.open(link, '_blank');
     });

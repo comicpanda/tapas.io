@@ -14,6 +14,7 @@ module.exports = function(grunt) {
     jshint: {
       files: ['Gruntfile.js', '<%= dirs.js %>/tapas.js'],
       options: {
+        reporterOutput: '', 
         globals: {
           jQuery: true
         }
@@ -100,7 +101,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         expand: true,
-        src: ['images/*.png','images/*.ico'],
+        src: ['images/*.png','images/*.ico', 'images/*.jpg'],
         dest: 'public/'
       }
     },
